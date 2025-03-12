@@ -3,29 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WoBBoB - The Fusion of Drum & Bass, AI, and the Future</title>
+    <title>WoBBoB - Home</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/reset.css">
-</head>
-<body class="dark-theme">
-    
-    <!-- 🔥 ENTRY SCREEN -->
-    <section class="entry-screen">
-        <img src="logos/WoBBoB Logo.webp" alt="WoBBoB Logo" class="entry-logo">
-        <button onclick="enterSite()" class="enter-btn">ENTER</button>
-    </section>
-    
-    <!-- 🔥 HEADER WITH LOGO (Hidden until enter is clicked) -->
-    <header id="main-header" class="hidden">
-        <h1>Welcome to WoBBoB</h1>
-        <p>The Ultimate Fusion of Music, AI & Innovation</p>
-    </header>
+    <link href="https://fonts.googleapis.com/css2?family=El&Font+Tag&family=Piantcants&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- 🔗 NAVIGATION -->
-    <nav id="main-nav" class="hidden">
+        body {
+            background: url('Images/84015132-cc74-4830-b28f-3abaad4c37d9.webp') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Piantcants', sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            font-family: 'El&Font Tag', sans-serif;
+            font-size: 20px;
+            color: #ff0;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff4500;
+        }
+
+        .socials {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .socials a {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .socials a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .socials img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .music-section {
+            margin-top: 50px;
+        }
+
+        .music-section h2 {
+            font-family: 'El&Font Tag', sans-serif;
+            font-size: 28px;
+            color: #ff0;
+            margin-bottom: 20px;
+        }
+
+        .music-players {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        iframe {
+            width: 300px;
+            height: 380px;
+            border-radius: 10px;
+        }
+
+        .contact-form {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-form h2 {
+            font-family: 'El&Font Tag', sans-serif;
+            font-size: 28px;
+            color: #ff0;
+            margin-bottom: 15px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background: #ff0;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .contact-form button:hover {
+            background: #ff4500;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about-us.html">About</a></li>
             <li><a href="bobbob.html">BoBBoT</a></li>
             <li><a href="trade-a-them-bot.html">Trade 'A' Them</a></li>
@@ -34,17 +155,44 @@
         </ul>
     </nav>
 
-    <!-- 🎶 LISTEN TO MUSIC -->
-    <section id="music-section" class="hidden music-player">
-        <h2>Listen to WoBBoB</h2>
-        <iframe src="https://open.spotify.com/embed/artist/24kOFQVp37RhiFCfileSYW"></iframe>
-        <iframe src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/wobbob"></iframe>
+    <!-- Social Links -->
+    <section class="socials">
+        <a href="https://www.facebook.com/dj.wobbob" target="_blank">
+            <img src="logos/facebook-square-icon.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/dj.wobbob/" target="_blank">
+            <img src="logos/ig-instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://soundcloud.com/wobbob" target="_blank">
+            <img src="logos/soundcloud-square-color-icon.png" alt="SoundCloud">
+        </a>
+        <a href="https://www.tiktok.com/@djwobbob" target="_blank">
+            <img src="logos/tiktok-square-color-icon.png" alt="TikTok">
+        </a>
+        <a href="https://onlyfans.com/mr.js.anatomy" target="_blank">
+            <img src="logos/Onlyfans.png" alt="OnlyFans">
+        </a>
+        <a href="https://account.apple.com/account/manage/section/information" target="_blank">
+            <img src="logos/apple-music-icon.png" alt="Apple Music">
+        </a>
+        <a href="https://open.spotify.com/artist/24kOFQVp37RhiFCfileSYW" target="_blank">
+            <img src="logos/spotify-square-color-icon.png" alt="Spotify">
+        </a>
     </section>
 
-    <!-- 📩 CONTACT FORM -->
-    <section id="contact-section" class="hidden contact-form">
-        <h2>Get in Touch</h2>
-        <form action="mailto:enquires@wobbob.pro" method="post" enctype="text/plain">
+    <!-- Music Players -->
+    <section class="music-section">
+        <h2>🔥 Listen to WoBBoB 🔥</h2>
+        <div class="music-players">
+            <iframe src="https://open.spotify.com/embed/artist/24kOFQVp37RhiFCfileSYW" frameborder="0" allow="encrypted-media"></iframe>
+            <iframe src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/wobbob" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+        <h2>📩 Get in Touch</h2>
+        <form action="mailto:dj-wobbob@outlook.com" method="post" enctype="text/plain">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
@@ -52,44 +200,5 @@
         </form>
     </section>
 
-    <!-- 📱 SOCIAL MEDIA ICONS -->
-    <footer id="footer-section" class="hidden">
-        <h2>Connect with WoBBoB</h2>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/dj.wobbob" target="_blank">
-                <img src="logos/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com/dj.wobbob/" target="_blank">
-                <img src="logos/instagram.png" alt="Instagram">
-            </a>
-            <a href="https://soundcloud.com/wobbob" target="_blank">
-                <img src="logos/soundcloud.png" alt="SoundCloud">
-            </a>
-            <a href="https://www.tiktok.com/@djwobbob" target="_blank">
-                <img src="logos/tiktok.png" alt="TikTok">
-            </a>
-            <a href="https://onlyfans.com/mr.js.anatomy" target="_blank">
-                <img src="logos/onlyfans.png" alt="OnlyFans">
-            </a>
-            <a href="https://account.apple.com/account/manage/section/information" target="_blank">
-                <img src="logos/apple.png" alt="Apple">
-            </a>
-            <a href="https://open.spotify.com/artist/24kOFQVp37RhiFCfileSYW" target="_blank">
-                <img src="logos/spotify.png" alt="Spotify">
-            </a>
-        </div>
-        <p>&copy; 2025 WoBBoB - All Rights Reserved.</p>
-    </footer>
-
-    <script>
-        function enterSite() {
-            document.querySelector(".entry-screen").style.display = "none";
-            document.getElementById("main-header").classList.remove("hidden");
-            document.getElementById("main-nav").classList.remove("hidden");
-            document.getElementById("music-section").classList.remove("hidden");
-            document.getElementById("contact-section").classList.remove("hidden");
-            document.getElementById("footer-section").classList.remove("hidden");
-        }
-    </script>
 </body>
 </html>
