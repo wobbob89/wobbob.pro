@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WoBBoB - Welcome</title>
+    <title>WoBBoB - Enter</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/reset.css">
     <style>
         body {
-            background: url('images/Gallery Two/1197f9f8-b0e0-466f-ac22-820cc80e930d.webp') no-repeat center center fixed;
-            background-size: cover;
+            background: url('logos/WoBBoB Logo.webp') no-repeat center center fixed;
+            background-size: contain;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,34 +18,32 @@
             text-align: center;
             color: white;
             font-family: 'Poppins', sans-serif;
+            position: relative;
         }
-        .logo {
-            width: 300px;
-            height: auto;
-        }
+        
         .enter-btn {
-            background: #ff0080;
-            color: #000;
-            padding: 15px 30px;
+            background: url('images/graffiti-enter.png') no-repeat center center;
+            background-size: contain;
+            width: 250px; /* Adjust as needed */
+            height: 100px; /* Adjust as needed */
             border: none;
-            font-size: 1.5em;
             cursor: pointer;
-            margin-top: 20px;
-            border-radius: 10px;
+            position: absolute;
+            bottom: 10%;
             transition: 0.3s;
         }
+
         .enter-btn:hover {
-            background: #ff00ff;
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-    <img src="logos/WoBBoB Logo.webp" alt="WoBBoB Logo" class="logo">
-    <button class="enter-btn" onclick="enterSite()">ENTER</button>
+    <button class="enter-btn" onclick="enterSite()"></button>
 
     <script>
         function enterSite() {
-            window.location.href = 'index.html';
+            window.location.href = 'home.html';
         }
     </script>
 </body>
