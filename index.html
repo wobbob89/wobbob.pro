@@ -4,57 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WoBBoB - The Future of Drum & Bass</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="dark-theme">
+
+    <!-- 🔥 HEADER -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact-us.html">Contact</a></li>
-                <li><a href="trade-a-them-bot.html">Trade 'A' Them Bot</a></li>
-            </ul>
-        </nav>
         <h1>Welcome to WoBBoB</h1>
         <p>The Fusion of Drum & Bass, AI, and the Future.</p>
     </header>
-    
-    <main>
-        <section>
-            <h2>Who is WoBBoB?</h2>
-            <p>A revolutionary force in Drum & Bass, WoBBoB blends the raw energy of underground beats with cutting-edge AI and visual technology. His journey from adversity to artistic mastery fuels every electrifying set.</p>
-        </section>
 
-        <section>
-            <h2>🎵 Listen to WoBBoB</h2>
-            <div class="music-player">
-                <!-- ✅ Embedded Spotify Player (WoBBoB Official) -->
-                <iframe style="border-radius:12px" 
-                    src="https://open.spotify.com/embed/artist/24kOFQVp37RhiFCfileSYW?utm_source=generator" 
-                    width="100%" height="152" frameborder="0" allowfullscreen="true" 
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-                </iframe>
+    <!-- 🔗 NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="bobbob.html">BoBBoT</a></li>
+            <li><a href="trade-a-them-bot.html">Trade 'A' Them</a></li>
+            <li><a href="gallery.html">Gallery & Merch</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+    </nav>
 
-                <!-- ✅ Embedded SoundCloud Player (WoBBoB Official) -->
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/wobbob&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false">
-                </iframe>
-            </div>
-        </section>
+    <!-- 🎶 MUSIC PLAYER -->
+    <section class="music-player">
+        <h2>Listen to WoBBoB</h2>
+        <iframe src="https://open.spotify.com/embed/artist/24kOFQVp37RhiFCfileSYW" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/135736272&color=%23ff0080&auto_play=false&show_artwork=true">
+        </iframe>
+    </section>
 
-        <section>
-            <h2>Upcoming Events</h2>
-            <p>Stay tuned for live performances, AI-driven DJ sets, and exclusive collaborations.</p>
-            <a href="about-us.html" class="btn">Learn More About WoBBoB</a>
-        </section>
-    </main>
+    <!-- 🖼️ GALLERY SECTION -->
+    <section class="section">
+        <h2>Gallery & Merch</h2>
+        <div class="gallery-grid">
+            <img src="images/gallery1.jpg" alt="Gallery Image 1">
+            <img src="images/gallery2.jpg" alt="Gallery Image 2">
+            <img src="images/gallery3.jpg" alt="Gallery Image 3">
+            <img src="images/gallery4.jpg" alt="Gallery Image 4">
+        </div>
+        <a href="gallery.html" class="btn">View Full Gallery</a>
+    </section>
 
+    <!-- 📩 CONTACT FORM -->
+    <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="mailto:enquires@wobbob.pro" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- 📱 SOCIAL MEDIA ICONS -->
     <footer>
+        <h2>Connect with WoBBoB</h2>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/dj.wobbob" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/dj.wobbob/" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://soundcloud.com/wobbob" target="_blank">
+                <img src="images/soundcloud.png" alt="SoundCloud">
+            </a>
+            <a href="https://www.tiktok.com/@djwobbob" target="_blank">
+                <img src="images/tiktok.png" alt="TikTok">
+            </a>
+            <a href="https://onlyfans.com/mr.js.anatomy" target="_blank">
+                <img src="images/onlyfans.png" alt="OnlyFans">
+            </a>
+            <a href="https://account.apple.com/account/manage/section/information" target="_blank">
+                <img src="images/apple.png" alt="Apple">
+            </a>
+            <a href="https://open.spotify.com/artist/24kOFQVp37RhiFCfileSYW" target="_blank">
+                <img src="images/spotify.png" alt="Spotify">
+            </a>
+        </div>
         <p>&copy; 2025 WoBBoB - All Rights Reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
 </body>
 </html>
