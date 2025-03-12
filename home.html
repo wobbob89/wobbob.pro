@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoBBoB - Welcome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        body {
+            background: url('images/Gallery Two/1197f9f8-b0e0-466f-ac22-820cc80e930d.webp') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        .logo {
+            width: 300px;
+            height: auto;
+        }
+        .enter-btn {
+            background: #ff0080;
+            color: #000;
+            padding: 15px 30px;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .enter-btn:hover {
+            background: #ff00ff;
+        }
+    </style>
+</head>
+<body>
+    <img src="logos/WoBBoB Logo.webp" alt="WoBBoB Logo" class="logo">
+    <button class="enter-btn" onclick="enterSite()">ENTER</button>
+
+    <script>
+        function enterSite() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
