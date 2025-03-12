@@ -5,49 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trade 'A' Them Bot - AI Trading Revolution</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=TR909&family=Killroy+Was+Here&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url('GalleryTwo/9e55804e-8bfa-48af-a7d0-90ba93f7aa80.webp') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Killroy Was Here', sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        h1, h2, h3, strong {
+            font-family: 'TR909', sans-serif;
+            color: #ff0;
+        }
+
+        /* Coin Animation */
+        .coin-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .coin {
+            width: 150px;
+            height: 150px;
+            background: url('logos/TradeathemLogo.png') no-repeat center;
+            background-size: cover;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(360deg); }
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            font-family: 'TR909', sans-serif;
+            font-size: 18px;
+            color: #ff0;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff4500;
+        }
+
+        .section {
+            margin-top: 80px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ff0;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            font-weight: bold;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff4500;
+        }
+
+        ul, ol {
+            text-align: left;
+            margin: auto;
+            max-width: 600px;
+        }
+    </style>
 </head>
-<body class="dark-theme">
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact-us.html">Contact</a></li>
-                <li><a href="bobbob.html">BoBBoT</a></li>
-            </ul>
-        </nav>
+<body>
+
+    <!-- Coin Animation -->
+    <div class="coin-container">
+        <div class="coin"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="bobbob.html">BoBBoT</a></li>
+        </ul>
+    </nav>
+
+    <div class="section">
         <h1>Trade 'A' Them Bot</h1>
-        <p>The AI-powered trading bot designed for precision, speed, and adaptability.</p>
-        <img src="images/trade-a-them-logo.png" alt="Trade 'A' Them Bot Logo" class="logo">
-    </header>
+        <p>The AI-powered trading bot designed for **precision, speed, and adaptability**.</p>
 
-    <main>
-        <section>
-            <h2>Why Trade 'A' Them?</h2>
-            <p>Trade 'A' Them Bot is built to outperform traditional trading strategies by leveraging AI-powered decision-making, real-time market analysis, and machine learning for risk-adjusted execution.</p>
+        <h2>Why Trade 'A' Them?</h2>
+        <p>Trade 'A' Them Bot **outperforms traditional trading** by leveraging AI-powered decision-making, real-time market analysis, and machine learning.</p>
 
-            <h2>🔍 Core Features</h2>
-            <ul>
-                <li>🤖 <strong>AI-Powered Market Analysis:</strong> Real-time multi-asset scanning, predictive modeling, and automated pattern recognition.</li>
-                <li>⚡ <strong>High-Speed Trade Execution:</strong> Integration with top exchanges (Binance, Kraken, Coinbase) and advanced order types.</li>
-                <li>📊 <strong>Sentiment & News Analysis:</strong> NLP-powered sentiment scoring from Reddit, Twitter, and news sources.</li>
-                <li>📉 <strong>Machine Learning Optimization:</strong> Neural networks and reinforcement learning for continuous trade refinement.</li>
-                <li>💰 <strong>Intelligent Risk & Portfolio Management:</strong> Auto stop-loss, dynamic hedging, and real-time trade monitoring.</li>
-                <li>🔐 <strong>Secure & Encrypted:</strong> API key protection, fail-safes, and automated trade reporting.</li>
-            </ul>
+        <h2>🔍 Core Features</h2>
+        <ul>
+            <li>🤖 <strong>AI-Powered Market Analysis:</strong> Real-time multi-asset scanning & predictive modeling.</li>
+            <li>⚡ <strong>High-Speed Trade Execution:</strong> Integrates with Binance, Kraken, Coinbase.</li>
+            <li>📊 <strong>Sentiment & News Analysis:</strong> Monitors Reddit, Twitter, and news sources.</li>
+            <li>📉 <strong>Machine Learning Optimization:</strong> AI continuously refines strategies.</li>
+            <li>💰 <strong>Intelligent Risk & Portfolio Management:</strong> Auto stop-loss & hedging.</li>
+            <li>🔐 <strong>Secure & Encrypted:</strong> API key protection & fail-safes.</li>
+        </ul>
 
-            <h2>⚙️ How It Works</h2>
-            <ol>
-                <li><strong>📡 Data Collection:</strong> Gathers live market data from multiple exchanges.</li>
-                <li><strong>🧠 AI-Driven Trade Decisions:</strong> Predicts price movements and analyzes volatility.</li>
-                <li><strong>🚀 Automated Execution:</strong> Places trades instantly with smart risk calculations.</li>
-                <li><strong>🛡️ Risk Management:</strong> Dynamically adjusts exposure and hedges trades.</li>
-                <li><strong>📈 Continuous Learning:</strong> AI optimizes trading strategies based on past results.</li>
-            </ol>
+        <h2>⚙️ How It Works</h2>
+        <ol>
+            <li><strong>📡 Data Collection:</strong> Live market data from top exchanges.</li>
+            <li><strong>🧠 AI-Driven Trade Decisions:</strong> Predicts price movements & analyzes volatility.</li>
+            <li><strong>🚀 Automated Execution:</strong> Places trades instantly with smart risk control.</li>
+            <li><strong>🛡️ Risk Management:</strong> Adjusts exposure dynamically.</li>
+            <li><strong>📈 Continuous Learning:</strong> AI fine-tunes strategies based on past trades.</li>
+        </ol>
 
-            <h2>📁 Project Structure</h2>
-            <pre>
+        <h2>📁 Project Structure</h2>
+        <pre>
 Trade_A_Them_Bot/
 ├── apis/
 │   ├── api_endpoints.py
@@ -67,30 +177,30 @@ Trade_A_Them_Bot/
 │   ├── test_env.py
 │   ├── test_execution.py
 ├── requirements.txt
-            </pre>
+        </pre>
 
-            <h2>🔐 Security & Compliance</h2>
-            <ul>
-                <li>✅ API keys stored securely in .env files.</li>
-                <li>✅ Automated error handling & fail-safes.</li>
-                <li>✅ Encrypted trade data for maximum security.</li>
-            </ul>
+        <h2>🔐 Security & Compliance</h2>
+        <ul>
+            <li>✅ API keys stored securely in `.env` files.</li>
+            <li>✅ Automated error handling & fail-safes.</li>
+            <li>✅ Encrypted trade data for maximum security.</li>
+        </ul>
 
-            <h2>🚀 Future Enhancements</h2>
-            <ul>
-                <li>🌍 AI-powered arbitrage & hedging strategies.</li>
-                <li>🪙 Integration with NFT & DeFi markets.</li>
-                <li>☁️ Cloud-based automation & AI-powered learning.</li>
-            </ul>
+        <h2>🚀 Future Enhancements</h2>
+        <ul>
+            <li>🌍 AI-powered arbitrage & hedging strategies.</li>
+            <li>🪙 Integration with NFT & DeFi markets.</li>
+            <li>☁️ Cloud-based automation & AI-powered learning.</li>
+        </ul>
 
-            <h2>💡 Join the Revolution</h2>
-            <p>Trade 'A' Them Bot is designed for traders looking to leverage cutting-edge AI and automation. Stay ahead of the market and unlock new trading opportunities.</p>
-            <a href="contact-us.html" class="btn">Get in Touch</a>
-        </section>
-    </main>
+        <h2>💡 Join the Revolution</h2>
+        <p>Trade 'A' Them Bot is **built for traders** who want cutting-edge AI and automation. Stay ahead of the market.</p>
+        <a href="contact-us.html" class="btn">Get in Touch</a>
+    </div>
 
     <footer>
         <p>&copy; 2025 Trade 'A' Them Bot - All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
