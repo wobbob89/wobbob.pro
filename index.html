@@ -11,23 +11,23 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             background: url('logos/WoBBoB_Logo.webp') no-repeat center center fixed;
             background-size: contain;
-            background-color: black;
+            background-color: black; /* Ensures no white screen */
             height: 100vh;
             width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            position: relative;
+            flex-direction: column;
         }
 
         .enter-container {
             position: absolute;
-            bottom: 10%; /* Adjusted to avoid cropping */
+            bottom: 10%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -35,10 +35,10 @@
         }
 
         .enter-btn {
-            width: 400px; /* Bigger size */
+            width: 400px; /* Larger button */
             height: auto;
             cursor: pointer;
-            background: none; /* No white background */
+            background: none;
             border: none;
             outline: none;
         }
@@ -46,13 +46,15 @@
         .enter-btn img {
             width: 100%;
             height: auto;
-            display: lettering;
+            display: block;
         }
     </style>
 </head>
 <body>
     <div class="enter-container">
-        <img class="enter-btn" src="logos/Enter_button.png" alt="Enter" onclick="enterSite()">
+        <button class="enter-btn" onclick="enterSite()">
+            <img src="logos/Enter_button.png" alt="Enter">
+        </button>
     </div>
 
     <script>
