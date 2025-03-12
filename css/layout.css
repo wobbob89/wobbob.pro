@@ -1,63 +1,4 @@
-/* 🌌 Global Site Styling */
-body {
-    background: #0a0a0a;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-    line-height: 1.6;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-/* 🎵 Futuristic Neon Header */
-header {
-    background: linear-gradient(135deg, #111, #222);
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0px 5px 15px rgba(255, 0, 128, 0.5);
-}
-
-h1 {
-    font-size: 2.8em;
-    text-shadow: 0px 0px 15px #ff0080;
-}
-
-/* 🔗 Navigation Bar */
-nav {
-    background: #222;
-    padding: 10px;
-    box-shadow: 0px 2px 10px rgba(255, 0, 128, 0.5);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2em;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-    background: #ff0080;
-    color: #000;
-    box-shadow: 0px 0px 10px rgba(255, 0, 128, 0.8);
-}
-
-/* 🏗️ Page Layout Structure */
+/* 📐 Global Page Layout */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -65,20 +6,21 @@ nav ul li a.active {
     padding: 20px;
 }
 
-/* 🖼️ Grid Layout for Pages */
-.grid-2 {
+/* 🏗️ Grid System */
+.grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-3 {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
 }
 
-/* 📱 Responsive for Mobile */
+/* 📱 Responsive Layout */
 @media (max-width: 768px) {
     .grid-2, .grid-3 {
         grid-template-columns: 1fr;
@@ -94,121 +36,13 @@ nav ul li a.active {
     box-shadow: 0px 0px 15px rgba(255, 0, 128, 0.5);
 }
 
-/* 🖼️ Gallery */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 15px;
-    padding: 20px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    border-radius: 8px;
-    transition: 0.3s ease-in-out;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 10px #ff0080;
-}
-
-/* 🎶 Music Player */
-.music-player {
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-    background: #222;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(255, 0, 128, 0.8);
-}
-
-/* 📩 Contact Form */
-.contact-form {
-    width: 80%;
-    max-width: 500px;
-    margin: auto;
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(255, 0, 128, 0.5);
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ff0080;
-    background: #000;
-    color: #fff;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background: #ff0080;
-    color: #000;
-    padding: 10px;
-    border: none;
-    font-size: 1.2em;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background: #ff00ff;
-}
-
-/* 🛒 Merch Store */
-.merch-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.merch-item {
-    background: #222;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.merch-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.merch-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 10px #ff0080;
-}
-
-/* 📱 Social Media Icons */
-.social-icons {
+/* 🔲 Flexbox Utility */
+.flex {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 15px;
-    margin: 20px auto;
 }
 
-.social-icons a img {
-    width: 40px;
-    height: 40px;
-    transition: 0.3s;
-}
-
-.social-icons a img:hover {
-    transform: scale(1.2);
-}
-
-/* 🚀 Footer */
-footer {
-    background: #111;
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
-    border-top: 2px solid #ff0080;
+.flex-column {
+    flex-direction: column;
 }
