@@ -10,15 +10,20 @@
 </head>
 <body class="dark-theme">
     
-    <!-- 🔥 HEADER WITH LOGO -->
-    <header>
-        <img src="logos/WoBBoB Logo.webp" alt="WoBBoB Logo" class="header-logo">
+    <!-- 🔥 ENTRY SCREEN -->
+    <section class="entry-screen">
+        <img src="logos/WoBBoB Logo.webp" alt="WoBBoB Logo" class="entry-logo">
+        <button onclick="enterSite()" class="enter-btn">ENTER</button>
+    </section>
+    
+    <!-- 🔥 HEADER WITH LOGO (Hidden until enter is clicked) -->
+    <header id="main-header" class="hidden">
         <h1>Welcome to WoBBoB</h1>
         <p>The Ultimate Fusion of Music, AI & Innovation</p>
     </header>
 
     <!-- 🔗 NAVIGATION -->
-    <nav>
+    <nav id="main-nav" class="hidden">
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about-us.html">About</a></li>
@@ -30,44 +35,14 @@
     </nav>
 
     <!-- 🎶 LISTEN TO MUSIC -->
-    <section class="music-player">
+    <section id="music-section" class="hidden music-player">
         <h2>Listen to WoBBoB</h2>
         <iframe src="https://open.spotify.com/embed/artist/24kOFQVp37RhiFCfileSYW"></iframe>
         <iframe src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/wobbob"></iframe>
     </section>
 
-    <!-- 📸 GALLERY & MERCH -->
-    <section class="gallery-merch">
-        <h2>Gallery & Merchandise</h2>
-        <div class="gallery-preview">
-            <a href="gallery.html"><img src="images/Gallery One/000000000DJ1400x1400.jpg" alt="Gallery Preview"></a>
-            <a href="gallery.html"><img src="images/Gallery Two/1197f9f8-b0e0-466f-ac22-820cc80e930d.webp" alt="Gallery 2"></a>
-        </div>
-        <a href="gallery.html" class="btn">View Full Gallery</a>
-    </section>
-
-    <!-- 🛒 OFFICIAL MERCH -->
-    <section class="merch-grid">
-        <h2>Official Merchandise</h2>
-        <div class="grid">
-            <div class="merch-item">
-                <img src="images/vinyl.jpg" alt="LP Vinyl Sleeve">
-                <p>🔥 LP Vinyl Sleeves</p>
-            </div>
-            <div class="merch-item">
-                <img src="images/hoodie.jpg" alt="Hoodie">
-                <p>🔥 Hoodies & T-Shirts</p>
-            </div>
-            <div class="merch-item">
-                <img src="images/trainers.jpg" alt="Trainers">
-                <p>🔥 Custom Trainers</p>
-            </div>
-        </div>
-        <a href="shop.html" class="btn">🛒 Shop Now</a>
-    </section>
-
     <!-- 📩 CONTACT FORM -->
-    <section class="contact-form">
+    <section id="contact-section" class="hidden contact-form">
         <h2>Get in Touch</h2>
         <form action="mailto:enquires@wobbob.pro" method="post" enctype="text/plain">
             <input type="text" name="name" placeholder="Your Name" required>
@@ -78,7 +53,7 @@
     </section>
 
     <!-- 📱 SOCIAL MEDIA ICONS -->
-    <footer>
+    <footer id="footer-section" class="hidden">
         <h2>Connect with WoBBoB</h2>
         <div class="social-icons">
             <a href="https://www.facebook.com/dj.wobbob" target="_blank">
@@ -106,8 +81,15 @@
         <p>&copy; 2025 WoBBoB - All Rights Reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
-    <script src="js/gallery.js"></script>
-    <script src="js/music.js"></script>
+    <script>
+        function enterSite() {
+            document.querySelector(".entry-screen").style.display = "none";
+            document.getElementById("main-header").classList.remove("hidden");
+            document.getElementById("main-nav").classList.remove("hidden");
+            document.getElementById("music-section").classList.remove("hidden");
+            document.getElementById("contact-section").classList.remove("hidden");
+            document.getElementById("footer-section").classList.remove("hidden");
+        }
+    </script>
 </body>
 </html>
