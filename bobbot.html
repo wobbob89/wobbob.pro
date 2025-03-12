@@ -15,7 +15,7 @@
         }
         
         body {
-            background: url('logos/BoBBoT_logo.png') no-repeat center center fixed;
+            background: url('images/gallery2/bobbob_background.jpg') no-repeat center center fixed;
             background-size: cover;
             height: 100vh;
             width: 100vw;
@@ -37,16 +37,16 @@
         }
         
         .container {
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.8);
             padding: 30px;
             border-radius: 15px;
-            max-width: 80%;
+            max-width: 85%;
         }
         
         .btn {
             display: inline-block;
             margin-top: 20px;
-            padding: 10px 20px;
+            padding: 12px 24px;
             background: #ffcc00;
             color: #000;
             text-transform: uppercase;
@@ -57,6 +57,58 @@
         }
         .btn:hover {
             background: #ff9900;
+        }
+        
+        #chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 350px;
+            height: 500px;
+            background: rgba(0, 0, 0, 0.85);
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #chatbot-messages {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px;
+        }
+        
+        .user-message {
+            background: #ff5500;
+            color: black;
+            padding: 8px;
+            border-radius: 5px;
+            text-align: right;
+        }
+        
+        .bot-message {
+            background: #222;
+            color: #ffcc00;
+            padding: 8px;
+            border-radius: 5px;
+            text-align: left;
+        }
+        
+        #chatbot-input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: black;
+            color: white;
+        }
+        
+        #chatbot-send {
+            width: 100%;
+            padding: 10px;
+            background: #ffcc00;
+            color: black;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -72,18 +124,12 @@
             <li>📝 <strong>AI Code Generation:</strong> Generate Python scripts, automate processes, and develop applications with BoBBoT's coding capabilities.</li>
             <li>📁 <strong>File Management & Organization:</strong> Automatically sort, clean, and categorize your files, ensuring a streamlined digital workspace.</li>
             <li>🔐 <strong>Secure Automation:</strong> Manage emails, schedule tasks, and execute administrative commands securely.</li>
-            <li>💾 <strong>Integrated Hashcat Security Analysis:</strong> Perform deep-level security testing with automated password recovery and encryption checks.</li>
             <li>📢 <strong>AI Text-to-Speech:</strong> BoBBoT can speak back with highly customizable voice settings, adapting to gender, age, and tone preferences.</li>
             <li>🤖 <strong>Adaptive Learning:</strong> BoBBoT improves its responses and efficiency based on previous interactions.</li>
-            <li>⚙️ <strong>Customizable Plugin System:</strong> Extend BoBBoT's capabilities with additional features, allowing endless functionality expansion.</li>
-            <li>🔊 <strong>Sound & Music Analysis:</strong> Integrate BoBBoT with your DJ setups, allowing real-time BPM detection, sound categorization, and track suggestions.</li>
         </ul>
         
         <h2>🚀 How It Works</h2>
         <p>BoBBoT operates on a multi-threaded AI engine, capable of understanding voice commands, executing file operations, generating code, and even running security audits. It is fully integrated with Google Cloud services for speech recognition and text-to-speech conversion, ensuring accurate and natural communication.</p>
-        
-        <h2>🎛️ Voice & AI Control</h2>
-        <p>BoBBoT can modify its voice dynamically. Simply say, "Change your voice," and it will prompt you for customization—whether you want a deep, robotic tone or a smooth, human-like conversational style. You can also let BoBBoT randomize a voice for you based on preferred age and gender.</p>
         
         <h2>💻 System Integration</h2>
         <p>BoBBoT seamlessly connects with your operating system, allowing you to control applications, manage settings, and even interact with smart devices. With built-in scripting capabilities, BoBBoT can run automated workflows tailored to your needs.</p>
@@ -92,5 +138,33 @@
         <p>Click below to activate BoBBoT and start experiencing the next level of AI-powered automation.</p>
         <a href="home.html" class="btn">Activate BoBBoT</a>
     </div>
+    
+    <!-- Chatbot UI -->
+    <div id="chatbot-container">
+        <div id="chatbot-messages"></div>
+        <input type="text" id="chatbot-input" placeholder="Type a message...">
+        <button id="chatbot-send">Send</button>
+    </div>
+    
+    <script>
+        document.getElementById("chatbot-send").addEventListener("click", async () => {
+            const inputField = document.getElementById("chatbot-input");
+            const userMessage = inputField.value;
+            if (!userMessage) return;
+
+            const chatbox = document.getElementById("chatbot-messages");
+            chatbox.innerHTML += `<div class='user-message'>${userMessage}</div>`;
+            inputField.value = "";
+
+            const response = await fetch("http://localhost:5000/chat", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message: userMessage })
+            });
+            
+            const data = await response.json();
+            chatbox.innerHTML += `<div class='bot-message'>${data.response}</div>`;
+        });
+    </script>
 </body>
 </html>
