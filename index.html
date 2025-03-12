@@ -13,7 +13,7 @@
         }
         
         body {
-            background: url('logos/WoBBoB Logo.webp') no-repeat center center fixed;
+            background: url('logos/WoBBoB_Logo.webp') no-repeat center center fixed;
             background-size: cover;
             height: 100vh;
             width: 100vw;
@@ -26,7 +26,7 @@
 
         .enter-container {
             position: absolute;
-            bottom: 10%;
+            bottom: 15%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -34,16 +34,25 @@
         }
 
         .enter-btn {
-            width: 250px;
+            width: 300px; /* Increased for better visibility */
             height: auto;
             cursor: pointer;
+            background: none; /* Removes any unwanted background */
+            border: none;
+            outline: none;
+        }
+
+        .enter-btn video {
+            width: 100%;
+            height: auto;
+            display: block;
         }
     </style>
 </head>
 <body>
     <div class="enter-container">
         <video class="enter-btn" onclick="enterSite()" autoplay loop muted>
-            <source src="logos/Enter button.mp4" type="video/mp4">
+            <source src="logos/Enter_button.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
