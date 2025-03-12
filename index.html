@@ -6,26 +6,29 @@
     <title>WoBBoB - Enter</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
             background: url('logos/WoBBoB Logo.webp') no-repeat center center fixed;
-            background-size: contain;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            flex-direction: column;
             text-align: center;
-            color: white;
-            font-family: 'Poppins', sans-serif;
             position: relative;
         }
-        
+
         .enter-btn {
             background: url('images/graffiti-enter.png') no-repeat center center;
             background-size: contain;
-            width: 250px; /* Adjust as needed */
-            height: 100px; /* Adjust as needed */
+            width: 250px;
+            height: 100px;
             border: none;
             cursor: pointer;
             position: absolute;
