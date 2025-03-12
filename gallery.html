@@ -3,42 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery & Merchandise</title>
+    <title>WoBBoB - Gallery</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=El&Font+Tag&family=Piantcants&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url('GalleryTwo/9e55804e-8bfa-48af-a7d0-90ba93f7aa80.webp') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Piantcants', sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'El&Font Tag', sans-serif;
+            font-size: 36px;
+            color: #ff0;
+            margin-top: 20px;
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery {
+            width: 45%;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        .gallery h2 {
+            font-family: 'El&Font Tag', sans-serif;
+            font-size: 28px;
+            color: #ff4500;
+            margin-bottom: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
-<body class="dark-theme">
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About</a></li>
-                <li><a href="contact-us.html">Contact</a></li>
-                <li><a href="trade-a-them-bot.html">Trade 'A' Them Bot</a></li>
-                <li><a href="bobbob.html">BoBBoT</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
 
-    <main>
-        <h1>📸 Gallery & Merchandise</h1>
+    <h1>🎨 WoBBoB Gallery 🎨</h1>
 
-        <h2>🎶 Music & Live Shows</h2>
-        <div class="gallery-grid">
-            <img src="images/gallery1.jpg" alt="Live Performance">
-            <img src="images/gallery2.jpg" alt="Merch Design">
+    <div class="gallery-container">
+
+        <!-- Gallery One -->
+        <div class="gallery">
+            <h2>Gallery One</h2>
+            <img src="GalleryOne/000000000DJ1400x1400.jpg" alt="Gallery One Image">
+            <img src="GalleryOne/1713410324441.jpg" alt="Gallery One Image">
+            <img src="GalleryOne/5a80b11a190629e57511d57c40e9145ffc94df48d8e44e4dffd6e77335164c4f.jpg" alt="Gallery One Image">
+            <img src="GalleryOne/face-swap.png" alt="Gallery One Image">
+            <img src="GalleryOne/Untitled-12.png" alt="Gallery One Image">
         </div>
 
-        <h2>🛒 Official Merchandise</h2>
-        <ul>
-            <li>🔥 LP Vinyl Sleeves</li>
-            <li>🔥 Hoodies & T-Shirts</li>
-            <li>🔥 Trainers & Custom Gear</li>
-        </ul>
-        <p>🛒 <a href="https://your-merch-store-link.com" target="_blank">Shop Now</a></p>
-    </main>
+        <!-- Gallery Two -->
+        <div class="gallery">
+            <h2>Gallery Two</h2>
+            <img src="GalleryTwo/1197f9f8-b0e0-466f-ac22-820cc80e930d.webp" alt="Gallery Two Image">
+            <img src="GalleryTwo/430e87dd-c937-45ee-a747-45a1269ef45e.webp" alt="Gallery Two Image">
+            <img src="GalleryTwo/6e1e8bc9-912f-46fe-9ed4-6b573bc67c26.webp" alt="Gallery Two Image">
+            <img src="GalleryTwo/e1781b50-638a-43c7-9181-612c99846aea.webp" alt="Gallery Two Image">
+            <img src="GalleryTwo/dfeb6942-c20c-44f0-92ce-e54377262bb8.webp" alt="Gallery Two Image">
+        </div>
 
-    <footer>
-        <p>&copy; 2025 WoBBoB - All Rights Reserved.</p>
-    </footer>
+    </div>
+
 </body>
 </html>
