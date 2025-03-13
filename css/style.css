@@ -9,7 +9,6 @@
 body {
     background: url('gallery/Wobbob-backgroung.png') no-repeat center center fixed;
     background-size: contain; /* Ensures the whole logo fits */
-    background-color: black; /* No white areas */
     height: 100vh;
     width: 100vw;
     display: flex;
