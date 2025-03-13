@@ -11,19 +11,18 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            background: url('logos/WoBBoB_Logo.webp') no-repeat center center fixed;
-            background-size: contain;  /* Ensures full logo is visible */
-            background-position: center;
-            background-color: black; /* Ensures background is never blank */
+            background: url('logos/WoBBoB_Logo.webp') no-repeat center center fixed !important;
+            background-size: contain;
             height: 100vh;
             width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            flex-direction: column;
+            position: relative;
+            background-color: black;
         }
 
         .enter-container {
@@ -36,12 +35,13 @@
         }
 
         .enter-btn {
-            width: 400px; /* Bigger button */
+            width: 600px; /* Larger button */
             height: auto;
             cursor: pointer;
-            background: none;
+            background: none; /* Ensures no unwanted background */
             border: none;
             outline: none;
+            padding: 0;
         }
 
         .enter-btn video {
