@@ -8,13 +8,12 @@
 /* Full-Screen Background */
 body {
     background: url('gallery/Wobbob-backgroung.png') no-repeat center center fixed;
-    background-size: contain; /* Ensures the whole logo fits */
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    background-size: cover;
+    font-family: 'Piantcants', sans-serif;
+    color: #fff;
+    text-align: cente
+    background: url('gallery/home.png') no-repeat center center fixed;
+            r;
 }
 
 /* Enter Button Container */
