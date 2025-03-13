@@ -11,39 +11,39 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             background: url('logos/WoBBoB_Logo.webp') no-repeat center center fixed;
-            background-size: contain;
-            background-color: black; /* Ensures no white screen */
+            background-size: cover;
+            background-color: black;
             height: 100vh;
-            width: 100vw;
+            width: 130vw;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            flex-direction: column;
+            position: relative;
         }
 
         .enter-container {
             position: absolute;
-            bottom: 10%;
+            bottom: 10%; /* Adjusted to avoid cropping */
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
+            width: 140%;
         }
 
         .enter-btn {
-            width: 400px; /* Larger button */
+            width: 400px; /* Bigger size */
             height: auto;
             cursor: pointer;
-            background: none;
+            background: none; /* No white background */
             border: none;
             outline: none;
         }
 
-        .enter-btn img {
+        .enter-btn video {
             width: 100%;
             height: auto;
             display: block;
@@ -52,9 +52,10 @@
 </head>
 <body>
     <div class="enter-container">
-        <button class="enter-btn" onclick="enterSite()">
-            <img src="logos/Enter_button.png" alt="Enter">
-        </button>
+        <video class="enter-btn" onclick="enterSite()" autoplay loop muted>
+            <source src="logos/Enter_button.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
     <script>
