@@ -1,44 +1,48 @@
 /* Reset All Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
 }
 
 /* Full-Screen Background */
 body {
-    background: url('gallery/Wobbob-backgroung.png') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Piantcants', sans-serif;
-    color: #fff;
-    text-align: cente
-    background: url('gallery/home.png') no-repeat center center fixed;
+ background: url('gallery/Wobbob-backgroung.png') no-repeat center center fixed; /* Background image */
+ background-size: cover;
+ font-family: 'Piantcants', sans-serif;
+ color: #fff;
+ text-align: center; /* Fixed typo here */
 }
 
-/* Enter Button Container */
+/* Optionally, you could choose to use the second background image as an alternative */
+ /* Uncomment the following line if you want to use the second background image instead
+  background: url('gallery/home.png') no-repeat center center fixed;
+ */
+
+ /* Enter Button Container */
 .enter-container {
-    position: absolute;
-    bottom: 25%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ position: absolute;
+ bottom: 25%;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 /* Enter Button Styling */
 .enter-btn {
-    width: 400px; /* Make the button larger */
-    height: auto;
-    cursor: pointer;
-    background: none;
-    border: none;
-    outline: none;
+ width: 400px; /* Make the button larger */
+ height: auto;
+ cursor: pointer;
+ background: none;
+ border: none;
+ outline: none;
 }
 
 /* Video Button */
 .enter-btn video {
-    width: 100%;
-    height: auto;
-    display: block;
-    background: transparent;
+ width: 100%;
+ height: auto;
+ display: block;
+ background: transparent;
 }
