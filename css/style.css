@@ -5,21 +5,24 @@
  box-sizing: border-box;
 }
 
-/* Full-Screen Background */
-body {
- background: url('gallery/Wobbob-backgroung.png') no-repeat center center fixed; /* Background image */
- background-size: cover;
- font-family: 'Piantcants', sans-serif;
- color: #fff;
- text-align: center; /* Fixed typo here */
+/* Full-Screen Video Background */
+body, html {
+ height: 100%;
+ overflow: hidden; /* Prevents scrolling */
 }
 
-/* Optionally, you could choose to use the second background image as an alternative */
- /* Uncomment the following line if you want to use the second background image instead
-  background: url('gallery/home.png') no-repeat center center fixed;
- */
+/* Video Background */
+.background-video {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover; /* Ensures the video covers the entire area */
+ z-index: -1; /* Places video behind other content */
+}
 
- /* Enter Button Container */
+/* Enter Button Container */
 .enter-container {
  position: absolute;
  bottom: 25%;
@@ -31,18 +34,17 @@ body {
 
 /* Enter Button Styling */
 .enter-btn {
- width: 400px; /* Make the button larger */
- height: auto;
- cursor: pointer;
- background: none;
- border: none;
- outline: none;
+ font-size: 2rem; /* Adjust the text size as necessary */
+ color: #fff; /* Text color */
+ background: none; /* No background */
+ border: none; /* No border */
+ cursor: pointer; /* Change cursor to pointer */
+ text-decoration: underline; /* Optional: to look like a clickable link */
+ padding: 10px 20px; /* Optional: Padding for better click area */
+ transition: color 0.3s; /* Optional: Smooth transition on hover */
 }
 
-/* Video Button */
-.enter-btn video {
- width: 100%;
- height: auto;
- display: block;
- background: transparent;
+/* Hover Effect */
+.enter-btn:hover {
+ color: #ffcc00; /* Change color on hover */
 }
