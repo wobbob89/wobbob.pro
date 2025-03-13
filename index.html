@@ -5,58 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WoBBoB - Enter</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        html, body {
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-            background: black;
-        }
-        
-        body {
-            background: url('logos/WoBBoB_Logo.webp') no-repeat center center fixed;
-            background-size: contain;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            position: relative;
-        }
-
-        .enter-container {
-            position: absolute;
-            bottom: 5%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .enter-btn {
-            width: 800px;
-            max-width: 90%;
-            height: auto;
-            cursor: pointer;
-            background: none;
-            border: none;
-            outline: none;
-            padding: 0;
-        }
-
-        .enter-btn video {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-    </style>
 </head>
-<body>
+<body class="index-page">
     <div class="enter-container">
         <video class="enter-btn" onclick="enterSite()" autoplay loop muted>
             <source src="logos/Enter_button.mp4" type="video/mp4">
