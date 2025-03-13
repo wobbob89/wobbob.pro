@@ -7,17 +7,19 @@
  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+ <video autoplay loop muted class="background-video">
+   <source src="your-video-file.mp4" type="video/mp4">
+   Your browser does not support HTML5 video.
+ </video>
+ 
  <div class="enter-container">
-  <video class="enter-btn" onclick="enterSite()" autoplay loop muted>
-    <source src="logos/Enter_button.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+   <button class="enter-btn" onclick="enterSite()">Enter</button>
  </div>
 
  <script>
-  function enterSite() {
-    window.location.href = 'home.html';
-  }
+ function enterSite() {
+   window.location.href = 'home.html';
+ }
  </script>
 </body>
 </html>
