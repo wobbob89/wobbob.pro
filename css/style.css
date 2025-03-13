@@ -1,202 +1,47 @@
-/* 🌌 GENERAL SITE THEME */
+/* Reset All Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Full-Screen Background */
 body {
-    background: #0a0a0a;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-}
-
-/* 🎨 INDEX PAGE STYLING */
-body.index-page {
     background: url('../logos/WoBBoBLogo.PNG') no-repeat center center fixed;
-    background-size: contain; /* Ensures full visibility without cropping */
-    background-position: center;
-    background-color: black; /* Fallback in case image fails */
-    width: 100vw;
+    background-size: contain; /* Ensures the whole logo fits */
+    background-color: black; /* No white areas */
     height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    overflow: hidden;
+    flex-direction: column;
 }
 
-/* 📢 ENTER BUTTON */
+/* Enter Button Container */
 .enter-container {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Enter Button Styling */
 .enter-btn {
-    width: 600px; /* Large button */
-    max-width: 90%;
+    width: 400px; /* Make the button larger */
     height: auto;
     cursor: pointer;
     background: none;
     border: none;
     outline: none;
-    padding: 0;
 }
 
+/* Video Button */
 .enter-btn video {
     width: 100%;
     height: auto;
     display: block;
-    background: none; /* Removes white background */
-}
-
-/* 🔗 NAVIGATION */
-nav {
-    background: #222;
-    padding: 10px;
-    box-shadow: 0px 2px 10px rgba(255, 0, 128, 0.5);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    color: #fff;
-    font-size: 1.2em;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-    background: #ff0080;
-    color: #000;
-    box-shadow: 0px 0px 10px rgba(255, 0, 128, 0.8);
-}
-
-/* 🖼️ GALLERY */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 15px;
-    padding: 20px;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 10px #ff0080;
-}
-
-/* 🎶 MUSIC PLAYER */
-.music-player {
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-    background: #222;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(255, 0, 128, 0.8);
-}
-
-/* 📩 CONTACT FORM */
-.contact-form {
-    width: 80%;
-    max-width: 500px;
-    margin: auto;
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(255, 0, 128, 0.5);
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ff0080;
-    background: #000;
-    color: #fff;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background: #ff0080;
-    color: #000;
-    padding: 10px;
-    border: none;
-    font-size: 1.2em;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background: #ff00ff;
-}
-
-/* 🛒 MERCH STORE */
-.merch-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.merch-item {
-    background: #222;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.merch-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.merch-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 10px #ff0080;
-}
-
-/* 📱 SOCIAL MEDIA ICONS */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 20px auto;
-}
-
-.social-icons a img {
-    width: 40px;
-    height: 40px;
-    transition: 0.3s;
-}
-
-.social-icons a img:hover {
-    transform: scale(1.2);
-}
-
-/* 🚀 FOOTER */
-footer {
-    background: #111;
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
-    border-top: 2px solid #ff0080;
+    background: transparent;
 }
