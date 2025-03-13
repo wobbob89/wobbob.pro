@@ -11,34 +11,35 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             background: url('logos/WoBBoB_Logo.webp') no-repeat center center fixed;
-            background-size: cover;
-            background-color: black;
+            background-size: contain;  /* Ensures full logo is visible */
+            background-position: center;
+            background-color: black; /* Ensures background is never blank */
             height: 100vh;
-            width: 130vw;
+            width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            position: relative;
+            flex-direction: column;
         }
 
         .enter-container {
             position: absolute;
-            bottom: 10%; /* Adjusted to avoid cropping */
+            bottom: 10%;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 140%;
+            width: 100%;
         }
 
         .enter-btn {
-            width: 400px; /* Bigger size */
+            width: 400px; /* Bigger button */
             height: auto;
             cursor: pointer;
-            background: none; /* No white background */
+            background: none;
             border: none;
             outline: none;
         }
