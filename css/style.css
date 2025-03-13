@@ -7,7 +7,7 @@
 
 /* Full-Screen Background */
 body {
-    background: url('../logos/WoBBoBLogo.PNG') no-repeat center center fixed;
+    background: url('../gallery/Wobbob-backgroung.PNG') no-repeat center center fixed;
     background-size: contain; /* Ensures the whole logo fits */
     background-color: black; /* No white areas */
     height: 100vh;
@@ -21,7 +21,7 @@ body {
 /* Enter Button Container */
 .enter-container {
     position: absolute;
-    bottom: 5%;
+    bottom: 25%;
     width: 100%;
     display: flex;
     justify-content: center;
