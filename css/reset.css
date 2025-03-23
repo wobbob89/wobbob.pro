@@ -1,0 +1,43 @@
+/* 🔄 Reset CSS: Ensures consistency across all browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+/* Default styles for lists */
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Normalize button styles */
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Prevent image stretching */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form fields consistency */
+input, textarea {
+    font-family: inherit;
+    font-size: 1em;
+}
