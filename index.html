@@ -1,25 +1,55 @@
-<!DOCTYPE html>
+# Update index.html to use PaintCans custom font (locally loaded)
+custom_font_index_html = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>WoBBoB - Welcome</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WoBBoB - Enter</title>
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    @font-face {
+      font-family: 'PaintCans';
+      src: url('Fonts/PaintCans.otf') format('opentype');
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('Wobbob-backgroung.png') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .enter-btn {
+      font-family: 'PaintCans', cursive;
+      font-size: 3rem;
+      padding: 20px 50px;
+      background-color: rgba(0, 0, 0, 0.65);
+      color: #fff;
+      border: 4px solid #fff;
+      border-radius: 15px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .enter-btn:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  </style>
 </head>
 <body>
-  <video autoplay loop muted class="background-video">
-    <source src="Enter button.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-  </video>
-
-  <div class="enter-container">
-    <button class="enter-btn" onclick="enterSite()">Enter</button>
-  </div>
-
-  <script>
-    function enterSite() {
-      window.location.href = 'home.html';
-    }
-  </script>
+  <button class="enter-btn" onclick="window.location.href='home.html'">Enter</button>
 </body>
 </html>
+"""
+
+# Save this updated index.html
+revised_index_path = "/mnt/data/wobbob_pro_rebuild/wobbob.pro-main/index.html"
+with open(revised_index_path, "w", encoding="utf-8") as file:
+    file.write(custom_font_index_html)
+
+revised_index_path
