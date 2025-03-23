@@ -1,21 +1,114 @@
-<!DOCTYPE html>
+dj_home_html = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>WoBBoB - DJ Booth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @font-face {
+      font-family: 'PaintCans';
+      src: url('Fonts/PaintCans.otf') format('opentype');
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('Wobbob-backgroung.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'PaintCans', cursive;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 3rem;
+      text-shadow: 2px 2px #000;
+    }
+
+    .deck-wrapper {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin: 40px auto;
+      max-width: 1200px;
+      gap: 30px;
+    }
+
+    .deck {
+      background-color: rgba(0, 0, 0, 0.75);
+      border: 2px solid #fff;
+      border-radius: 15px;
+      padding: 20px;
+      flex: 1 1 40%;
+      min-width: 350px;
+      box-shadow: 0 0 15px #00ffcc;
+    }
+
+    .deck iframe {
+      width: 100%;
+      height: 352px;
+      border-radius: 10px;
+    }
+
+    .mixer {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px dashed #fff;
+      border-radius: 15px;
+      padding: 20px;
+      flex: 1 1 90%;
+      margin-top: 30px;
+      color: #ccc;
+      text-shadow: 1px 1px #000;
+    }
+
+    .mixer ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.2rem;
+    }
+
+    .mixer li {
+      padding: 5px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      .deck-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Wobbob</h1>
-  
-<div class="social-icons">
-  <a href="https://www.facebook.com/dj.wobbob"><img src="images/icons/facebook.png" alt="Facebook"></a>
-  <a href="https://www.instagram.com/dj.wobbob/"><img src="images/icons/instagram.png" alt="Instagram"></a>
-  <a href="https://soundcloud.com/wobbob"><img src="images/icons/soundcloud.png" alt="SoundCloud"></a>
-  <a href="https://www.tiktok.com/@djwobbob"><img src="images/icons/tiktok.png" alt="TikTok"></a>
-  <a href="https://onlyfans.com/mr.js.anatomy"><img src="images/icons/onlyfans.png" alt="OnlyFans"></a>
-  <a href="https://open.spotify.com/artist/24kOFQVp37RhiFCfileSYW"><img src="images/icons/spotify.png" alt="Spotify"></a>
-</div>
+  <h1>WoBBoB Digital Decks</h1>
 
+  <div class="deck-wrapper">
+    <div class="deck">
+      <h2>Deck A - Spotify</h2>
+      <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator" 
+              frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+
+    <div class="deck">
+      <h2>Deck B - SoundCloud</h2>
+      <iframe width="100%" height="352" scrolling="no" frameborder="no" allow="autoplay" 
+        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/wobbob&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+      </iframe>
+    </div>
+
+    <div class="mixer">
+      <h2>Now Spinning</h2>
+      <ul>
+        <li>🔥 Wobbob Exclusive Mixes</li>
+        <li>🎧 Live DJ Sets Weekly</li>
+        <li>📀 Dirty Bass Drops</li>
+        <li>💿 Vibe Curated Playlists</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
+"""
