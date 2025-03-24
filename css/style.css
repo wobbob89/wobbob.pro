@@ -63,7 +63,7 @@ nav ul li a:hover {
   text-shadow: 2px 2px #ffcc00;
 }
 
-/* === CDJ SECTION (HOME PAGE MUSIC PLAYERS) === */
+/* === CDJ DECK SECTION (HOME) === */
 .cdj-wrapper {
   display: flex;
   justify-content: center;
@@ -90,7 +90,7 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-/* === CONTACT FORM (HOME PAGE) === */
+/* === CONTACT FORM (HOME) === */
 .contact-form {
   margin: 60px auto;
   padding: 25px;
@@ -141,23 +141,29 @@ nav ul li a:hover {
   box-shadow: 0 0 15px #ff4500;
 }
 
-/* === SOCIAL ICONS === */
-.socials {
-  margin: 50px auto;
+/* === FOOTER SOCIALS === */
+footer {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px 0;
+  margin-top: 80px;
+  text-align: center;
+}
+
+footer .socials {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
 }
 
-.socials a img {
-  width: 60px;
-  height: 60px;
+footer .socials a img {
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.socials a img:hover {
+footer .socials a img:hover {
   transform: scale(1.2);
   box-shadow: 0 0 10px #00ffff;
 }
@@ -165,15 +171,15 @@ nav ul li a:hover {
 /* === BoBBoT PAGE STYLES ONLY === */
 body.bobbott-page {
   font-family: 'Kilroy', cursive;
-  background: url('../logos/bobbot.png') center center no-repeat fixed;
+  background: url('../logos/BoBBoT_logo.png') center center no-repeat fixed;
   background-size: cover;
-  color: #00ffff;
+  color: #00e0ff;
   text-align: center;
   padding: 160px 20px 60px;
 }
 
 .bobbott-section {
-  max-width: 1200px;
+  max-width: 90%;
   margin: auto;
   text-align: left;
   padding: 0 20px;
@@ -182,7 +188,7 @@ body.bobbott-page {
 .bobbott-section h1,
 .bobbott-section h2 {
   font-size: 48px;
-  color: #00ffff;
+  color: #00e0ff;
   text-align: center;
   text-shadow: 2px 2px #000;
   margin-bottom: 30px;
@@ -190,10 +196,10 @@ body.bobbott-page {
 
 .bobbott-section p,
 .bobbott-section li {
-  font-size: 24px;
-  color: #ffffff;
-  margin-bottom: 18px;
-  line-height: 1.6;
+  font-size: 26px;
+  color: #00e0ff;
+  margin-bottom: 20px;
+  line-height: 1.8;
 }
 
 .bobbott-section ul {
