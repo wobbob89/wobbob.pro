@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BoBBoT - AI Innovation</title>
   <link rel="stylesheet" href="css/style.css" />
+
   <style>
+    /* Font loading - Make sure Fonts folder and file name are correct */
     @font-face {
       font-family: 'Kilroy';
       src: url('Fonts/kilroywashere.otf') format('opentype');
@@ -18,7 +20,8 @@
     }
 
     body {
-      background: url('logos/BoBBoT_logo.png') no-repeat center center fixed;
+      /* If image fails, fallback color prevents blank page */
+      background: #000 url('logos/BoBBoT_logo.png') no-repeat center center fixed;
       background-size: cover;
       font-family: 'Kilroy', sans-serif;
       color: #fff;
@@ -117,6 +120,7 @@
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -128,6 +132,7 @@
     </ul>
   </nav>
 
+  <!-- Main Content -->
   <div class="container">
     <h1>BoBBoT: Intelligent Assistant and Automation System</h1>
     <p>BoBBoT is a next-generation intelligent automation assistant designed by WoBBoB, built to run seamlessly on both Windows 10 and WSL. It combines a professional GUI, deep system integration, and cutting-edge automation, all wrapped into a secure, self-updating, and fully testable infrastructure.</p>
