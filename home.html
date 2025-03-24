@@ -24,8 +24,7 @@
 
         body {
             background: url('Wobbob-backgroung.png') no-repeat center center fixed;
-            background-size: cover;
-            height: 100vh;
+            background-size: contain;
             font-family: 'PaintCans', sans-serif;
             color: #fff;
             text-align: center;
@@ -156,3 +155,49 @@
         }
     </style>
 </head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="bobbob.html">BoBBoT</a></li>
+            <li><a href="trade-a-them-bot.html">Trade 'A' Them</a></li>
+            <li><a href="gallery.html">Gallery & Merch</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- CDJ Music Players -->
+    <section class="cdj-wrapper">
+        <div class="cdj-deck">
+            <iframe src="https://open.spotify.com/embed/artist/24kOFQVp37RhiFCfileSYW" allow="encrypted-media"></iframe>
+        </div>
+        <div class="cdj-deck">
+            <iframe src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/wobbob"></iframe>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="mailto:dj-wobbob@outlook.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Social Media Icons -->
+    <section class="socials">
+        <a href="https://www.facebook.com/dj.wobbob" target="_blank"><img src="logos/facebook-square-icon.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/dj.wobbob/" target="_blank"><img src="logos/ig-instagram-icon.png" alt="Instagram"></a>
+        <a href="https://soundcloud.com/wobbob" target="_blank"><img src="logos/soundcloud-square-color-icon.png" alt="SoundCloud"></a>
+        <a href="https://www.tiktok.com/@djwobbob" target="_blank"><img src="logos/tiktok-square-color-icon.png" alt="TikTok"></a>
+        <a href="https://onlyfans.com/mr.js.anatomy" target="_blank"><img src="logos/Onlyfans.png" alt="OnlyFans"></a>
+        <a href="https://account.apple.com/account/manage/section/information" target="_blank"><img src="logos/apple-music-icon.png" alt="Apple Music"></a>
+        <a href="https://open.spotify.com/artist/24kOFQVp37RhiFCfileSYW" target="_blank"><img src="logos/spotify-square-color-icon.png" alt="Spotify"></a>
+    </section>
+</body>
+</html>
