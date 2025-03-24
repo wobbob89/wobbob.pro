@@ -1,131 +1,209 @@
 /* === FONTS === */
 @font-face {
-    font-family: 'ElFontTag';
-    src: url('../Fonts/ElFont_Tag.otf') format('opentype');
+  font-family: 'ElFontTag';
+  src: url('../Fonts/ElFont_Tag.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'PaintCans';
-    src: url('../Fonts/PaintCans.otf') format('opentype');
+  font-family: 'PaintCans';
+  src: url('../Fonts/PaintCans.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'Kilroy';
-    src: url('../Fonts/kilroywashere.otf') format('opentype');
+  font-family: 'Kilroy';
+  src: url('../Fonts/kilroywashere.otf') format('opentype');
 }
 
 /* === RESET === */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'PaintCans', sans-serif;
-    color: #fff;
-    background: #000 url('../logos/WoBBoBLogo.PNG') center center no-repeat fixed;
-    background-size: contain;
-    text-align: center;
+  font-family: 'PaintCans', sans-serif;
+  color: #fff;
+  background: #000 url('../logos/WoBBoBLogo.PNG') center center no-repeat fixed;
+  background-size: contain;
+  text-align: center;
 }
 
 /* === NAVIGATION === */
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    padding: 20px 0;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 20px 0;
+  z-index: 1000;
 }
 
 nav ul {
-    list-style: none;
-    text-align: center;
+  list-style: none;
+  text-align: center;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 25px;
+  display: inline-block;
+  margin: 0 25px;
 }
 
 nav ul li a {
-    font-family: 'ElFontTag', sans-serif;
-    font-size: 28px;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 2px 2px #ff00ff;
-    transition: 0.3s ease;
+  font-family: 'ElFontTag', sans-serif;
+  font-size: 28px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 2px 2px #ff00ff;
+  transition: 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #00ffff;
-    text-shadow: 2px 2px #ffcc00;
+  color: #00ffff;
+  text-shadow: 2px 2px #ffcc00;
+}
+
+/* === CDJ SECTION (HOME PAGE MUSIC PLAYERS) === */
+.cdj-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 160px 20px 40px;
+}
+
+.cdj-deck {
+  width: 380px;
+  height: 400px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 25px #ff0;
+  padding: 15px;
+  backdrop-filter: blur(8px);
+}
+
+.cdj-deck iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+/* === CONTACT FORM (HOME PAGE) === */
+.contact-form {
+  margin: 60px auto;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 15px #ff00ff;
+  text-align: center;
+}
+
+.contact-form h2 {
+  font-family: 'ElFontTag', sans-serif;
+  font-size: 34px;
+  color: #ff0;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  font-family: 'PaintCans', sans-serif;
+  font-size: 16px;
+  background: #111;
+  color: #fff;
+}
+
+.contact-form button {
+  background: #ff0;
+  color: #000;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'ElFontTag', sans-serif;
+  font-size: 18px;
+  box-shadow: 0 0 10px #ff0;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #ff4500;
+  box-shadow: 0 0 15px #ff4500;
 }
 
 /* === SOCIAL ICONS === */
 .socials {
-    margin: 50px auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 .socials a img {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .socials a img:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 10px #00ffff;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #00ffff;
 }
 
-/* === KILROY PAGE: BoBBoT ONLY === */
+/* === BoBBoT PAGE STYLES ONLY === */
 body.bobbott-page {
-    font-family: 'Kilroy', cursive;
-    background: url('../logos/BoBBoT_logo.png') center center no-repeat fixed;
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding: 160px 20px 60px;
+  font-family: 'Kilroy', cursive;
+  background: url('../logos/BoBBoT_logo.png') center center no-repeat fixed;
+  background-size: cover;
+  color: #00ffff;
+  text-align: center;
+  padding: 160px 20px 60px;
 }
 
 .bobbott-section {
-    max-width: 1200px;
-    margin: auto;
-    text-align: left;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+  padding: 0 20px;
 }
 
 .bobbott-section h1,
 .bobbott-section h2 {
-    font-size: 48px;
-    color: #ff69b4;
-    text-align: center;
-    text-shadow: 2px 2px #000;
-    margin-bottom: 30px;
+  font-size: 48px;
+  color: #00ffff;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 30px;
 }
 
 .bobbott-section p,
 .bobbott-section li {
-    font-size: 24px;
-    color: #ffffff;
-    margin-bottom: 18px;
-    line-height: 1.6;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 18px;
+  line-height: 1.6;
 }
 
 .bobbott-section ul {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .bobbott-section ul li::before {
-    content: "⚡ ";
-    color: #ffff00;
-    font-size: 1.2em;
-    margin-right: 8px;
+  content: "⚡ ";
+  color: #ffff00;
+  font-size: 1.2em;
+  margin-right: 8px;
 }
