@@ -171,7 +171,7 @@ footer .socials a img:hover {
 /* === BoBBoT PAGE STYLES ONLY === */
 body.bobbott-page {
   font-family: 'Kilroy', cursive;
-  background: url('../logos/BoBBoT_logo.png') center center no-repeat fixed;
+  background: url('../logos/bobbot.png') center center no-repeat fixed;
   background-size: cover;
   color: #00e0ff;
   text-align: center;
