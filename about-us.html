@@ -84,16 +84,24 @@
       font-size: 26px;
       line-height: 2.2;
       margin-bottom: 25px;
-      color: #00ff00;
-      text-shadow: 2px 2px 4px #ff0000;
+      color: #ffff00;
+      text-shadow: 2px 2px 4px #00ff00;
     }
 
     .social-icons {
-      margin: 60px auto;
+      margin: 80px auto 40px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 25px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .social-icons img {
@@ -101,12 +109,14 @@
       height: 60px;
       border-radius: 10px;
       transition: transform 0.3s ease;
+      background: #000;
     }
 
     .social-icons a[href*="snapchat"] img {
       background-color: #fff;
       padding: 10px;
       border-radius: 14px;
+      box-shadow: 0 0 8px #000;
     }
 
     .social-icons img:hover {
