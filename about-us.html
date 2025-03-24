@@ -2,21 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About WoBBoB</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    @font-face {
+      font-family: 'ElFontTag';
+      src: url('Fonts/ElFont_Tag.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'PaintCans';
+      src: url('Fonts/PaintCans_Free/PaintCans.otf') format('opentype');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url('Gallery/About.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'PaintCans', sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #000;
+      padding: 20px 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0 20px;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      font-family: 'ElFontTag', sans-serif;
+      font-size: 36px;
+      color: #fff;
+      text-decoration: none;
+      text-shadow: 2px 2px #ff69b4;
+      transition: 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ff69b4;
+      text-shadow: 2px 2px #fff;
+    }
+
+    .about-section {
+      margin-top: 180px;
+      padding: 30px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 12px;
+      box-shadow: 0 0 20px #ff0;
+    }
+
+    .about-section h1 {
+      font-family: 'ElFontTag', sans-serif;
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px #ff69b4;
+    }
+
+    .about-section p {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .social-icons {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .social-icons img {
+      width: 50px;
+      height: 50px;
+      transition: 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
-  <h1>About WoBBoB</h1>
-  <p>Welcome to Wobbob, the heart of beats and vibes.</p>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About</a></li>
+      <li><a href="bobbob.html">BoBBoT</a></li>
+      <li><a href="trade-a-them-bot.html">Trade 'A' Them</a></li>
+      <li><a href="gallery.html">Gallery & Merch</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="about-section">
+    <h1>About WoBBoB</h1>
+    <p>From the streets of South West and Wiltshire, to the forefront of Drum & Bass and AI development, WoBBoB's journey is one of grit, self-belief, and triumph against the odds. It’s a story that inspires, a narrative filled with struggle and redemption, proving that determination can turn the darkest chapters into a light that shines brightly for others to follow.</p>
+    <p>He faced addiction, crime, and undiagnosed mental health challenges—but never gave in. A builder by trade, WoBBoB forged his own path, self-taught in music production and later coding, launching two massive projects: BoBBoT and the Trade 'A' Them Bot.</p>
+    <p>His tracks like <strong>Wide Asleep</strong> and <strong>Quantum Bass</strong> aren't just bangers—they’re his truth in sound. Every beat, every drop, tells part of his journey.</p>
+    <p>Now with near-complete AI projects under his belt, WoBBoB's vision is bigger than ever: to inspire, to build, and to lead by example. Against all odds, he’s done it solo—and he’s just getting started.</p>
+  </section>
 
   <div class="social-icons">
-    <a href="https://www.facebook.com/dj.wobbob"><img src="images/icons/facebook.png" alt="Facebook"></a>
-    <a href="https://www.instagram.com/dj.wobbob/"><img src="images/icons/instagram.png" alt="Instagram"></a>
-    <a href="https://www.tiktok.com/@djwobbob"><img src="images/icons/tiktok.png" alt="TikTok"></a>
-    <a href="https://www.snapchat.com/add/wobbob89"><img src="images/icons/snapchat.png" alt="Snapchat"></a>
-    <a href="https://onlyfans.com/mr.js.anatomy"><img src="images/icons/onlyfans.png" alt="OnlyFans"></a>
-    <a href="https://soundcloud.com/wobbob"><img src="images/icons/soundcloud.png" alt="SoundCloud"></a>
-    <a href="https://open.spotify.com/artist/24kOFQVp37RhiFCfileSYW"><img src="images/icons/spotify.png" alt="Spotify"></a>
+    <a href="https://www.facebook.com/dj.wobbob"><img src="logos/facebook-square-icon.png" alt="Facebook"></a>
+    <a href="https://www.instagram.com/dj.wobbob/"><img src="logos/ig-instagram-icon.png" alt="Instagram"></a>
+    <a href="https://www.tiktok.com/@djwobbob"><img src="logos/tiktok-square-color-icon.png" alt="TikTok"></a>
+    <a href="https://www.snapchat.com/add/wobbob89"><img src="logos/snapchat.png" alt="Snapchat"></a>
+    <a href="https://onlyfans.com/mr.js.anatomy"><img src="logos/Onlyfans.png" alt="OnlyFans"></a>
+    <a href="https://soundcloud.com/wobbob"><img src="logos/soundcloud-square-color-icon.png" alt="SoundCloud"></a>
+    <a href="https://open.spotify.com/artist/24kOFQVp37RhiFCfileSYW"><img src="logos/spotify-square-color-icon.png" alt="Spotify"></a>
   </div>
 </body>
 </html>
