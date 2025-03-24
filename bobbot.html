@@ -11,7 +11,7 @@
   <!-- Navigation -->
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
+      <li><a href="home.html">Home</a></li>
       <li><a href="about-us.html">About</a></li>
       <li><a href="bobbot.html">BoBBoT</a></li>
       <li><a href="trade-a-them-bot.html">Trade 'A' Them</a></li>
@@ -23,33 +23,96 @@
   <!-- BoBBoT Content -->
   <div class="bobbott-section">
     <h1>BoBBoT: Intelligent Assistant and Automation System</h1>
-    <p><strong>Overview:</strong> BoBBoT is a next-generation intelligent automation assistant designed by WoBBoB, built to run seamlessly on both Windows 10 and WSL (Windows Subsystem for Linux). It combines a professional GUI, deep system integration, and cutting-edge automation, all wrapped into a secure, self-updating, and fully testable bot infrastructure.</p>
+
+    <p><strong>Overview:</strong> BoBBoT is a next-generation intelligent automation assistant designed by WoBBoB, built to run seamlessly on both Windows 10 and WSL (Windows Subsystem for Linux). It combines a professional GUI, deep system integration, and cutting-edge automation, all wrapped into a secure, self-updating, and fully testable bot infrastructure. Designed for power users, creators, developers, and anyone wanting to streamline their workflow, BoBBoT is your ultimate digital operator.</p>
 
     <h2>Key Features:</h2>
     <ul>
-      <li>Modular Structure with gui/, core/, security/, codegen/, utils/, testing/</li>
-      <li>Professional GUI with PyQt6 – multi-tabbed interface, dark/light themes</li>
-      <li>Automation Suite: doc creation, email, browser search, app launching</li>
-      <li>Security: VPN control, DSS hooks, audit logging, role-based permissions</li>
-      <li>Credential Management: .env/config.ini, keyring encryption, live updates</li>
-      <li>Self-Upgrading Code Generator with versioning and backups</li>
-      <li>Testing & Logging: unit tests for all modules, full logs</li>
-      <li>System Awareness: adjusts commands for Windows vs. WSL</li>
-      <li>Encryption + 2FA support for startup/login</li>
-      <li>Future-Ready: plugins, voice control, AI/NLP, deploy via AppImage</li>
+      <li>Modular Structure for Scalability:
+        <ul>
+          <li>Core folders include gui/, core/, security/, codegen/, utils/, and testing/.</li>
+          <li>Modules are separated by function for easy maintenance and future upgrades.</li>
+        </ul>
+      </li>
+      <li>Professional-Grade GUI (Built with PyQt6):
+        <ul>
+          <li>Tabs and panels for Home, Automation, Security, System Tools, Code Generator, and Settings.</li>
+          <li>Dark and light themes supported with custom branding and fonts.</li>
+          <li>Real-time logs, action status, and system tray minimization support.</li>
+        </ul>
+      </li>
+      <li>Automation Suite:
+        <ul>
+          <li>Document Creation: Generates .txt, .docx, and .pdf files using user input.</li>
+          <li>Email Sending: Secure SMTP email support with optional OAuth2 integration.</li>
+          <li>Web Search & Browser Launching: Auto-search or open pages via default browser or internal view.</li>
+          <li>System Program Access: Launch apps, open directories, or clean files directly from the GUI.</li>
+        </ul>
+      </li>
+      <li>Security Controls:
+        <ul>
+          <li>VPN Activation: One-click VPN launch with system feedback.</li>
+          <li>DSS Compatibility: Integration hooks for Data Security Suites (DSS) and external firewall/antivirus.</li>
+          <li>Permission System: Role-based access control for sensitive tasks.</li>
+          <li>Audit Logging: Tracks all sensitive actions with timestamps.</li>
+        </ul>
+      </li>
+      <li>Credential Management:
+        <ul>
+          <li>Uses .env or config.ini for user credentials, with support for encryption or secure keyrings.</li>
+          <li>API key testing built-in.</li>
+          <li>Settings panel allows live credential updates.</li>
+        </ul>
+      </li>
+      <li>Self-Upgrading Code Generator:
+        <ul>
+          <li>Generate Python templates for new features.</li>
+          <li>Maintains version history and changelogs.</li>
+          <li>Backs up current modules before applying changes.</li>
+          <li>Compatible with local templates or AI-generated snippets.</li>
+        </ul>
+      </li>
+      <li>Testing and Logging:
+        <ul>
+          <li>Unit tests included for GUI, automation, security, and core.</li>
+          <li>Logs kept for each test with pass/fail results.</li>
+          <li>Logging system tracks everything done by the bot: actions, errors, warnings, updates.</li>
+        </ul>
+      </li>
+      <li>System Awareness & Cross-Platform Support:
+        <ul>
+          <li>Detects Windows vs WSL environment and adapts paths and permissions accordingly.</li>
+          <li>System commands (like open, start, sudo) auto-adjust based on detected OS.</li>
+        </ul>
+      </li>
+      <li>Security and Encryption:
+        <ul>
+          <li>HTTPS enforced for all web/API interactions.</li>
+          <li>Local encryption of sensitive config data.</li>
+          <li>Optional 2FA or login prompt to start the bot.</li>
+        </ul>
+      </li>
+      <li>Future-Ready Architecture:
+        <ul>
+          <li>Plugin support and command palette in development.</li>
+          <li>Voice command integration and AI/NLP tools planned.</li>
+          <li>Easily deployable via PyInstaller or Linux AppImage for end-users.</li>
+        </ul>
+      </li>
     </ul>
 
     <h2>Typical Use Cases:</h2>
     <ul>
-      <li>Automate reports, tool launching, and workflow setup</li>
-      <li>Secure email & file generation for personal or client work</li>
-      <li>VPN-protected internet tasks</li>
-      <li>Trigger code generation with one click</li>
-      <li>Daily scripting tasks via timer or command</li>
+      <li>Automate weekly reports, launch creative tools, manage files.</li>
+      <li>Securely send emails and generate reports for clients or personal records.</li>
+      <li>Perform VPN-protected internet tasks with confidence.</li>
+      <li>Quickly search documentation or trigger code generation with one click.</li>
+      <li>Set up a daily workflow with custom scripts executed on timer or command.</li>
     </ul>
 
-    <p><strong>Why BoBBoT?</strong> It’s not just a bot. It’s your right hand. From studio to system tools, BoBBoT adapts, protects, and delivers.</p>
-    <p><em>Created by WoBBoB. Designed to dominate.</em></p>
+    <p><strong>Why BoBBoT?</strong> BoBBoT stands out because it doesn't just automate — it elevates. It's not just a script launcher or scheduler — it's your full-stack personal operator that evolves as you do. From studio production to daily digital ops, BoBBoT adapts, protects, and delivers.</p>
+    <p><em>It’s not a bot — it’s your right hand.</em></p>
+    <p><strong>Created by WoBBoB. Designed to dominate.</strong></p>
   </div>
 
   <!-- Social Media Icons -->
