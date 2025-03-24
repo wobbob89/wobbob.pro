@@ -13,7 +13,7 @@ This is the official WoBBoB website, featuring:
 - **index.html** - Homepage with an introduction to WoBBoB.
 - **about-us.html** - Biography, achievements, and AI projects.
 - **articles.html** - AI & music technology blog.
-- **bobbob.html** - BoBBoT page (AI-powered chatbot).
+- **bobbot.html** - BoBBoT page (AI-powered chatbot).
 - **contact-us.html** - Social media, emails, and login links.
 - **gallery.html** - Merchandise and exclusive visuals.
 - **trade-a-them-bot.html** - Automated trading bot overview.
