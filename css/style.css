@@ -1,12 +1,17 @@
 /* === FONTS === */
 @font-face {
     font-family: 'ElFontTag';
-    src: url('Fonts/ElFont_Tag.otf') format('opentype');
+    src: url('../Fonts/ElFont_Tag.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'PaintCans';
-    src: url('Fonts/PaintCans.otf') format('opentype');
+    src: url('../Fonts/PaintCans.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Kilroy';
+    src: url('../Fonts/kilroywashere.otf') format('opentype');
 }
 
 /* === RESET === */
@@ -16,11 +21,10 @@
     box-sizing: border-box;
 }
 
-/* === BODY === */
 body {
     font-family: 'PaintCans', sans-serif;
     color: #fff;
-    background: #000 url('logos/WoBBoBLogo.PNG') center center no-repeat fixed;
+    background: #000 url('../logos/WoBBoBLogo.PNG') center center no-repeat fixed;
     background-size: contain;
     text-align: center;
 }
@@ -155,4 +159,46 @@ nav ul li a:hover {
 .socials a img:hover {
     transform: scale(1.2);
     box-shadow: 0 0 10px #00ffff;
+}
+
+/* === KILROY SCOPED STYLES === */
+body.bobbott-page {
+    font-family: 'Kilroy', cursive;
+    background: url('../logos/BoBBoT_logo.png') center center no-repeat fixed;
+    background-size: contain;
+    text-align: center;
+}
+
+.bobbott-section {
+    margin: 180px auto 60px;
+    padding: 30px;
+    max-width: 1200px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 0 25px #ff0;
+    text-align: left;
+}
+
+.bobbott-section h1, .bobbott-section h2 {
+    font-size: 36px;
+    color: #ff69b4;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bobbott-section p, .bobbott-section li {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.bobbott-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.bobbott-section ul li::before {
+    content: "• ";
+    color: #ff69b4;
+    font-size: 1.2em;
+    margin-right: 8px;
 }
