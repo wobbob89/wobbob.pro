@@ -1,117 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>BoBBoT - Intelligent Assistant</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        @font-face {
-            font-family: 'ElFontTag';
-            src: url('Fonts/ElFont_Tag.otf') format('opentype');
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BoBBoT - Intelligent Assistant</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    @font-face {
+      font-family: 'Kilroy';
+      src: url('Fonts/kilroywashere.otf') format('opentype');
+    }
 
-        @font-face {
-            font-family: 'PaintCans';
-            src: url('Fonts/PaintCans_Free/PaintCans.otf') format('opentype');
-        }
+    body.bobbott-page {
+      background: url('logos/BoBBoT_logo.png') center center no-repeat fixed;
+      background-size: contain;
+      font-family: 'Kilroy', cursive;
+      color: #fff;
+      text-align: center;
+    }
 
-        body {
-            background: url('logos/BoBBoT_logo.png') no-repeat center center fixed;
-            background-size: contain;
-            font-family: 'PaintCans', sans-serif;
-            color: #fff;
-            text-align: center;
-        }
+    .bobbott-section {
+      margin: 180px auto 60px;
+      padding: 30px;
+      max-width: 1200px;
+      background: rgba(0, 0, 0, 0.85);
+      border-radius: 15px;
+      box-shadow: 0 0 25px #ff0;
+      text-align: left;
+    }
 
-        .content-wrapper {
-            max-width: 1200px;
-            margin: 180px auto 60px;
-            padding: 30px;
-            background: rgba(0, 0, 0, 0.8);
-            border-radius: 15px;
-            box-shadow: 0 0 25px #ff0;
-        }
+    .bobbott-section h1, .bobbott-section h2 {
+      font-size: 36px;
+      color: #ff69b4;
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
-        h1, h2 {
-            font-family: 'ElFontTag', cursive;
-            margin-bottom: 20px;
-            font-size: 40px;
-            text-shadow: 2px 2px #ff69b4;
-        }
+    .bobbott-section p, .bobbott-section li {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
 
-        p, li {
-            font-size: 20px;
-            margin-bottom: 15px;
-        }
+    .bobbott-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li::before {
-            content: "• ";
-            color: #ff69b4;
-        }
-    </style>
+    .bobbott-section ul li::before {
+      content: "• ";
+      color: #ff69b4;
+      font-size: 1.2em;
+      margin-right: 8px;
+    }
+  </style>
 </head>
-<body>
+<body class="bobbott-page">
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About</a></li>
-            <li><a href="bobbob.html">BoBBoT</a></li>
-            <li><a href="trade-a-them-bot.html">Trade 'A' Them</a></li>
-            <li><a href="gallery.html">Gallery & Merch</a></li>
-            <li><a href="contact-us.html">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About</a></li>
+      <li><a href="bobbob.html">BoBBoT</a></li>
+      <li><a href="trade-a-them-bot.html">Trade 'A' Them</a></li>
+      <li><a href="gallery.html">Gallery & Merch</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- BoBBoT Info Section -->
-    <div class="content-wrapper">
-        <h1>BoBBoT: Intelligent Assistant and Automation System</h1>
-        <p><strong>Overview:</strong> BoBBoT is a next-generation intelligent automation assistant designed by WoBBoB, built to run seamlessly on both Windows 10 and WSL. It combines a professional GUI, deep system integration, and cutting-edge automation, all wrapped into a secure, self-updating, and fully testable bot infrastructure.</p>
+  <!-- BoBBoT Content -->
+  <div class="bobbott-section">
+    <h1>BoBBoT: Intelligent Assistant and Automation System</h1>
+    <p><strong>Overview:</strong> BoBBoT is a next-generation intelligent automation assistant designed by WoBBoB, built to run seamlessly on both Windows 10 and WSL (Windows Subsystem for Linux). It combines a professional GUI, deep system integration, and cutting-edge automation, all wrapped into a secure, self-updating, and fully testable bot infrastructure.</p>
 
-        <h2>Key Features:</h2>
-        <ul>
-            <li>Modular Structure with gui/, core/, security/, codegen/, utils/, testing/</li>
-            <li>Professional GUI with PyQt6 – multi-tabbed interface, dark/light themes</li>
-            <li>Automation Suite: doc creation, email, browser search, app launching</li>
-            <li>Security: VPN control, DSS hooks, audit logging, role-based permissions</li>
-            <li>Credential Management: .env/config.ini, keyring encryption, live updates</li>
-            <li>Self-Upgrading Code Generator with versioning and backups</li>
-            <li>Testing & Logging: unit tests for all modules, full logs</li>
-            <li>System Awareness: adjusts commands for Windows vs. WSL</li>
-            <li>Encryption + 2FA support for startup/login</li>
-            <li>Future-Ready: plugins, voice control, AI/NLP, deploy via AppImage</li>
-        </ul>
+    <h2>Key Features:</h2>
+    <ul>
+      <li>Modular Structure with gui/, core/, security/, codegen/, utils/, testing/</li>
+      <li>Professional GUI with PyQt6 – multi-tabbed interface, dark/light themes</li>
+      <li>Automation Suite: doc creation, email, browser search, app launching</li>
+      <li>Security: VPN control, DSS hooks, audit logging, role-based permissions</li>
+      <li>Credential Management: .env/config.ini, keyring encryption, live updates</li>
+      <li>Self-Upgrading Code Generator with versioning and backups</li>
+      <li>Testing & Logging: unit tests for all modules, full logs</li>
+      <li>System Awareness: adjusts commands for Windows vs. WSL</li>
+      <li>Encryption + 2FA support for startup/login</li>
+      <li>Future-Ready: plugins, voice control, AI/NLP, deploy via AppImage</li>
+    </ul>
 
-        <h2>Typical Use Cases:</h2>
-        <ul>
-            <li>Automate reports, tool launching, and workflow setup</li>
-            <li>Secure email & file generation for personal or client work</li>
-            <li>VPN-protected internet tasks</li>
-            <li>Trigger code generation with one click</li>
-            <li>Daily scripting tasks via timer or command</li>
-        </ul>
+    <h2>Typical Use Cases:</h2>
+    <ul>
+      <li>Automate reports, tool launching, and workflow setup</li>
+      <li>Secure email & file generation for personal or client work</li>
+      <li>VPN-protected internet tasks</li>
+      <li>Trigger code generation with one click</li>
+      <li>Daily scripting tasks via timer or command</li>
+    </ul>
 
-        <p><strong>Why BoBBoT?</strong> It’s not just a bot. It’s your right hand. From studio to system tools, BoBBoT adapts, protects, and delivers.</p>
-        <p><em>Created by WoBBoB. Designed to dominate.</em></p>
-    </div>
+    <p><strong>Why BoBBoT?</strong> It’s not just a bot. It’s your right hand. From studio to system tools, BoBBoT adapts, protects, and delivers.</p>
+    <p><em>Created by WoBBoB. Designed to dominate.</em></p>
+  </div>
 
-    <!-- Social Media Icons -->
-    <section class="socials">
-        <a href="https://www.facebook.com/dj.wobbob" target="_blank"><img src="logos/facebook-square-icon.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/dj.wobbob/" target="_blank"><img src="logos/ig-instagram-icon.png" alt="Instagram"></a>
-        <a href="https://soundcloud.com/wobbob" target="_blank"><img src="logos/soundcloud-square-color-icon.png" alt="SoundCloud"></a>
-        <a href="https://www.tiktok.com/@djwobbob" target="_blank"><img src="logos/tiktok-square-color-icon.png" alt="TikTok"></a>
-        <a href="https://onlyfans.com/mr.js.anatomy" target="_blank"><img src="logos/Onlyfans.png" alt="OnlyFans"></a>
-        <a href="https://account.apple.com/account/manage/section/information" target="_blank"><img src="logos/apple-music-icon.png" alt="Apple Music"></a>
-        <a href="https://open.spotify.com/artist/24kOFQVp37RhiFCfileSYW" target="_blank"><img src="logos/spotify-square-color-icon.png" alt="Spotify"></a>
-    </section>
+  <!-- Social Media Icons -->
+  <section class="socials">
+    <a href="https://www.facebook.com/dj.wobbob" target="_blank"><img src="logos/facebook-square-icon.png" alt="Facebook"></a>
+    <a href="https://www.instagram.com/dj.wobbob/" target="_blank"><img src="logos/ig-instagram-icon.png" alt="Instagram"></a>
+    <a href="https://soundcloud.com/wobbob" target="_blank"><img src="logos/soundcloud-square-color-icon.png" alt="SoundCloud"></a>
+    <a href="https://www.tiktok.com/@djwobbob" target="_blank"><img src="logos/tiktok-square-color-icon.png" alt="TikTok"></a>
+    <a href="https://onlyfans.com/mr.js.anatomy" target="_blank"><img src="logos/Onlyfans.png" alt="OnlyFans"></a>
+    <a href="https://account.apple.com/account/manage/section/information" target="_blank"><img src="logos/apple-music-icon.png" alt="Apple Music"></a>
+    <a href="https://open.spotify.com/artist/24kOFQVp37RhiFCfileSYW" target="_blank"><img src="logos/spotify-square-color-icon.png" alt="Spotify"></a>
+  </section>
 
 </body>
 </html>
