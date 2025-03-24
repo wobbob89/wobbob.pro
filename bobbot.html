@@ -1,165 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BoBBoT - AI Innovation</title>
-  <link rel="stylesheet" href="css/style.css" />
-
+  <meta charset="UTF-8">
+  <title>BoBBoT - Intelligent Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Font loading - Make sure Fonts folder and file name are correct */
     @font-face {
       font-family: 'Kilroy';
       src: url('Fonts/kilroywashere.otf') format('opentype');
     }
 
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      /* If image fails, fallback color prevents blank page */
-      background: #000 url('logos/BoBBoT_logo.png') no-repeat center center fixed;
+      font-family: 'Kilroy', cursive;
+      background: url('logos/BoBBoT_logo.png') no-repeat center center fixed;
       background-size: cover;
-      font-family: 'Kilroy', sans-serif;
       color: #fff;
-      text-align: center;
+      line-height: 1.6;
     }
 
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.9);
-      padding: 20px 0;
-      z-index: 1000;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 40px;
-    }
-
-    nav ul li a {
-      font-size: 32px;
-      color: #ff69b4;
-      text-decoration: none;
-      text-shadow: 2px 2px #ffff00;
-    }
-
-    nav ul li a:hover {
-      color: #ffff00;
-      text-shadow: 2px 2px #ff69b4;
-    }
-
-    .container {
-      margin-top: 180px;
-      background: rgba(0, 0, 0, 0.75);
-      padding: 60px;
-      border-radius: 20px;
-      max-width: 90%;
-      margin-left: auto;
-      margin-right: auto;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 60px 30px;
+      max-width: 1000px;
+      margin: auto;
     }
 
     h1, h2 {
-      font-size: 48px;
-      color: #39ff14;
-      text-shadow: 3px 3px 6px #00ffff;
-      margin-bottom: 20px;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 0;
     }
 
-    p, li {
-      font-size: 28px;
-      line-height: 1.8;
-      color: #ffffff;
-      text-shadow: 2px 2px 4px #00ff00;
-      margin-bottom: 20px;
+    ul {
+      list-style: none;
+      padding-left: 0;
     }
 
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 16px 32px;
-      background: #ffcc00;
-      color: #000;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 24px;
-      transition: background 0.3s;
+    ul li::before {
+      content: "• ";
+      color: #ff6600;
     }
 
-    .btn:hover {
-      background: #ff9900;
-    }
-
-    .social-icons {
-      margin-top: 40px;
+    .navbar {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 15px 30px;
       display: flex;
-      justify-content: center;
-      gap: 25px;
-      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
-    .social-icons a img {
-      width: 55px;
-      height: 55px;
-      transition: transform 0.3s ease;
+    .navbar a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.1rem;
     }
 
-    .social-icons a img:hover {
-      transform: scale(1.2);
+    .socials {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .socials a {
+      color: #ff6600;
+      margin: 0 10px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about-us.html">About</a></li>
-      <li><a href="bobbot.html">BoBBoT</a></li>
-      <li><a href="trade-a-them-bot.html">Trade 'A' Them</a></li>
-      <li><a href="gallery.html">Gallery & Merch</a></li>
-      <li><a href="contact-us.html">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="navbar">
+    <div>
+      <a href="index.html">Home</a>
+      <a href="mixes.html">Mixes</a>
+      <a href="about.html">About</a>
+      <a href="bobbot.html">BoBBoT</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
 
-  <!-- Main Content -->
-  <div class="container">
+  <div class="overlay">
     <h1>BoBBoT: Intelligent Assistant and Automation System</h1>
-    <p>BoBBoT is a next-generation intelligent automation assistant designed by WoBBoB, built to run seamlessly on both Windows 10 and WSL. It combines a professional GUI, deep system integration, and cutting-edge automation, all wrapped into a secure, self-updating, and fully testable infrastructure.</p>
 
-    <h2>🔥 Key Features</h2>
+    <p><strong>Overview:</strong> BoBBoT is a next-generation intelligent automation assistant designed by WoBBoB, built to run seamlessly on both Windows 10 and WSL (Windows Subsystem for Linux). It combines a professional GUI, deep system integration, and cutting-edge automation, all wrapped into a secure, self-updating, and fully testable bot infrastructure. Designed for power users, creators, developers, and anyone wanting to streamline their workflow, BoBBoT is your ultimate digital operator.</p>
+
+    <h2>Key Features:</h2>
     <ul>
-      <li><strong>Pro GUI:</strong> PyQt6, clean tabs for automation, security, code generation & settings.</li>
-      <li><strong>Automation:</strong> Emails, files, browsers, programs—done with one click.</li>
-      <li><strong>Security:</strong> Built-in VPN toggle, DSS link, full audit logging, permission-based actions.</li>
-      <li><strong>CodeGen:</strong> Generates, updates, logs and applies bot upgrades safely.</li>
-      <li><strong>Credential Handling:</strong> Encrypted key storage and user-level access.</li>
+      <li><strong>Modular Structure for Scalability:</strong> Core folders include gui/, core/, security/, codegen/, utils/, and testing.</li>
+      <li><strong>Professional-Grade GUI (Built with PyQt6):</strong> Tabs and panels for Home, Automation, Security, System Tools, Code Generator, and Settings.</li>
+      <li><strong>Automation Suite:</strong> Generate documents, send emails, launch apps, search the web, manage files.</li>
+      <li><strong>Security Controls:</strong> VPN launch, role-based permissions, audit logging, DSS integration.</li>
+      <li><strong>Credential Management:</strong> Secure configs, encrypted keyring support, live updates.</li>
+      <li><strong>Self-Upgrading Code Generator:</strong> Template creation, backups, versioning, AI snippet support.</li>
+      <li><strong>Testing and Logging:</strong> Unit testing, error tracking, test logs for all modules.</li>
+      <li><strong>System Awareness:</strong> Auto-detect WSL vs Windows; smart command handling.</li>
+      <li><strong>Security and Encryption:</strong> HTTPS, encrypted storage, optional 2FA, local protection.</li>
+      <li><strong>Future-Ready:</strong> Plugin architecture, voice/NLP plans, deployable builds.</li>
     </ul>
 
-    <h2>⚡ Use It To</h2>
-    <p>Search the web, create documents, control your system, or run your own workflows. BoBBoT = full control, no bullshit.</p>
+    <h2>Typical Use Cases:</h2>
+    <ul>
+      <li>Automate weekly reports, launch creative tools, manage files.</li>
+      <li>Securely send emails and generate reports for clients or personal records.</li>
+      <li>VPN-protected internet tasks with confidence.</li>
+      <li>Search docs or trigger code generation instantly.</li>
+      <li>Set up daily workflows with scripts or commands.</li>
+    </ul>
 
-    <a href="home.html" class="btn">Activate BoBBoT</a>
+    <p><strong>Why BoBBoT?</strong> BoBBoT stands out because it doesn't just automate — it elevates. From studio production to daily ops, it adapts, protects, and delivers. It's not a bot — it's your right hand.</p>
 
-    <div class="social-icons">
-      <a href="https://www.facebook.com/dj.wobbob"><img src="logos/facebook-square-icon.png" alt="Facebook"></a>
-      <a href="https://www.instagram.com/dj.wobbob/"><img src="logos/ig-instagram-icon.png" alt="Instagram"></a>
-      <a href="https://www.tiktok.com/@djwobbob"><img src="logos/tiktok-square-color-icon.png" alt="TikTok"></a>
-      <a href="https://www.snapchat.com/add/wobbob89"><img src="logos/snapchat-square-color-icon.png" alt="Snapchat"></a>
-      <a href="https://onlyfans.com/mr.js.anatomy"><img src="logos/Onlyfans.png" alt="OnlyFans"></a>
-      <a href="https://soundcloud.com/wobbob"><img src="logos/soundcloud-square-color-icon.png" alt="SoundCloud"></a>
-      <a href="https://open.spotify.com/artist/24kOFQVp37RhiFCfileSYW"><img src="logos/spotify-square-color-icon.png" alt="Spotify"></a>
-      <a href="https://music.apple.com/profile/djwobbob"><img src="logos/apple-music-icon.png" alt="Apple Music"></a>
+    <p><em>Created by WoBBoB. Designed to dominate.</em></p>
+
+    <div class="socials">
+      <a href="https://soundcloud.com/wobbob" target="_blank">SoundCloud</a>
+      <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+      <a href="mailto:your@email.com">Email</a>
     </div>
   </div>
 
