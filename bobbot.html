@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BoBBoT - AI Powerhouse</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>BoBBoT - AI Innovation</title>
+  <link rel="stylesheet" href="css/style.css">
   <style>
     @font-face {
       font-family: 'Kilroy';
@@ -29,9 +29,9 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background: rgba(0, 0, 0, 0.85);
+      background: rgba(0, 0, 0, 0.9);
       padding: 20px 0;
-      z-index: 999;
+      z-index: 1000;
     }
 
     nav ul {
@@ -43,7 +43,7 @@
     }
 
     nav ul li a {
-      font-size: 30px;
+      font-size: 32px;
       color: #ff69b4;
       text-decoration: none;
       text-shadow: 2px 2px #ffff00;
@@ -55,7 +55,7 @@
     }
 
     .container {
-      margin-top: 200px;
+      margin-top: 180px;
       background: rgba(0, 0, 0, 0.75);
       padding: 60px;
       border-radius: 20px;
@@ -77,10 +77,6 @@
       color: #ffffff;
       text-shadow: 2px 2px 4px #00ff00;
       margin-bottom: 20px;
-    }
-
-    ul {
-      padding-left: 0;
     }
 
     .btn {
@@ -173,7 +169,6 @@
 </head>
 <body>
 
-  <!-- Nav -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -185,23 +180,21 @@
     </ul>
   </nav>
 
-  <!-- Content -->
   <div class="container">
     <h1>BoBBoT: Intelligent Assistant and Automation System</h1>
-    <p>BoBBoT is a next-generation intelligent automation assistant designed by WoBBoB, built to run seamlessly on both Windows 10 and WSL (Windows Subsystem for Linux). It combines a professional GUI, deep system integration, and cutting-edge automation, all wrapped into a secure, self-updating, and fully testable bot infrastructure. Designed for power users, creators, developers, and anyone wanting to streamline their workflow, BoBBoT is your ultimate digital operator.</p>
+    <p>BoBBoT is a next-generation intelligent automation assistant designed by WoBBoB, built to run seamlessly on both Windows 10 and WSL. It combines a professional GUI, deep system integration, and cutting-edge automation, all wrapped into a secure, self-updating, and fully testable infrastructure.</p>
 
     <h2>🔥 Key Features</h2>
     <ul>
-      <li><strong>Professional-Grade GUI:</strong> Built with PyQt6, featuring tabs for Automation, Security, CodeGen, and Settings.</li>
-      <li><strong>Automation Suite:</strong> Automates document creation, email sending, web browsing, and file management.</li>
-      <li><strong>Security Controls:</strong> Built-in VPN and DSS integration, permission system, and audit logging.</li>
-      <li><strong>Credential Management:</strong> Uses encrypted storage, .env configs, and key testing.</li>
-      <li><strong>Self-Upgrading Code Generator:</strong> Builds new scripts, logs changes, and manages version history.</li>
-      <li><strong>Testing & Logging:</strong> Every module has test coverage and logs for validation.</li>
+      <li><strong>Pro GUI:</strong> PyQt6, clean tabs for automation, security, code generation & settings.</li>
+      <li><strong>Automation:</strong> Emails, files, browsers, programs—done with one click.</li>
+      <li><strong>Security:</strong> Built-in VPN toggle, DSS link, full audit logging, permission-based actions.</li>
+      <li><strong>CodeGen:</strong> Generates, updates, logs and applies bot upgrades safely.</li>
+      <li><strong>Credential Handling:</strong> Encrypted key storage and user-level access.</li>
     </ul>
 
-    <h2>🚀 Use Cases</h2>
-    <p>Run web searches, manage programs, create secure documents, and automate your life. BoBBoT isn't just smart—it's aware, secure, and fully yours.</p>
+    <h2>⚡ Use It To</h2>
+    <p>Search the web, create documents, control your system, or run your own workflows. BoBBoT = full control, no bullshit.</p>
 
     <a href="home.html" class="btn">Activate BoBBoT</a>
 
@@ -217,7 +210,6 @@
     </div>
   </div>
 
-  <!-- Chatbot -->
   <div id="chatbot-container">
     <div id="chatbot-messages"></div>
     <input type="text" id="chatbot-input" placeholder="Type a message...">
@@ -232,11 +224,13 @@
       const chatbox = document.getElementById("chatbot-messages");
       chatbox.innerHTML += `<div class='user-message'>${userMessage}</div>`;
       inputField.value = "";
+
       const response = await fetch("http://localhost:5000/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userMessage })
       });
+
       const data = await response.json();
       chatbox.innerHTML += `<div class='bot-message'>${data.response}</div>`;
     });
