@@ -169,37 +169,39 @@ footer .socials a img:hover {
 }
 
 /* === BoBBoT PAGE STYLES ONLY === */
+/* === BoBBoT PAGE STYLES ONLY === */
 body.bobbott-page {
   font-family: 'Kilroy', cursive;
   background: url('../logos/bobbot.png') center center no-repeat fixed;
   background-size: cover;
-  color: #00e0ff;
+  color: #A0D2EB;
   text-align: center;
   padding: 160px 20px 60px;
 }
 
 .bobbott-section {
-  max-width: 90%;
-  margin: auto;
+  max-width: 1100px;
+  margin: 0 auto;
   text-align: left;
-  padding: 0 20px;
+  padding: 120px 20px 60px; /* space down from the top logo */
 }
 
 .bobbott-section h1,
 .bobbott-section h2 {
   font-size: 48px;
-  color: #00e0ff;
+  color: #A0D2EB;
   text-align: center;
-  text-shadow: 2px 2px #000;
+  text-shadow: 2px 2px 3px #000;
   margin-bottom: 30px;
 }
 
 .bobbott-section p,
 .bobbott-section li {
   font-size: 26px;
-  color: #00e0ff;
+  color: #A0D2EB;
   margin-bottom: 20px;
   line-height: 1.8;
+  text-shadow: 1px 1px 2px #000; /* improves readability over any background */
 }
 
 .bobbott-section ul {
