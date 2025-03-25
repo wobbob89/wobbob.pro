@@ -48,6 +48,7 @@ body.trade-a-them-page {
 body.bobbott-page {
   background-image: url('../logos/bobbot.png');
   font-family: 'Kilroy', sans-serif;
+  font-size: 26px;
 }
 
 body.about-page {
@@ -57,6 +58,7 @@ body.about-page {
 body.trade-a-them-page {
   background-image: url('../Gallery/Tradeathembackground.png');
   font-family: 'Kilroy', sans-serif;
+  font-size: 26px;
 }
 
 body.bobbott-page::before,
