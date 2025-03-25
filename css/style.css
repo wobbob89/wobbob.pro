@@ -114,7 +114,7 @@ nav ul li a:hover {
 /* === Gallery & Merch Page === */
 
 body.gallery-page {
-  background-image: url('../gallery/Wobbob-backgroung.png');
+  background-image: url('../Wobbob-backgroung.png');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
