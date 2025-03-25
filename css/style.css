@@ -37,7 +37,8 @@ body.home-page {
 }
 
 body.bobbott-page,
-body.about-page {
+body.about-page,
+body.trade-a-them-page {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -53,8 +54,14 @@ body.about-page {
   background-image: url('../Untitled-20.png');
 }
 
+body.trade-a-them-page {
+  background-image: url('../Gallery/Tradeathembackground.png');
+  font-family: 'Kilroy', sans-serif;
+}
+
 body.bobbott-page::before,
-body.about-page::before {
+body.about-page::before,
+body.trade-a-them-page::before {
   content: "";
   position: fixed;
   top: 0;
