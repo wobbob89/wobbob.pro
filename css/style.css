@@ -137,7 +137,7 @@ body.gallery-page::before {
 }
 
 .gallery-section h1 {
-  font-family: 'ElFontTag', sans-serif;
+  font-family: 'PaintCans', sans-serif;
   font-size: 60px;
   margin-bottom: 30px;
   color: #39ff14;
@@ -172,7 +172,7 @@ body.gallery-page::before {
 }
 
 .merch-section h2 {
-  font-family: 'ElFontTag', sans-serif;
+  font-family: 'PaintCans', sans-serif;
   font-size: 48px;
   color: #ff69b4;
   text-shadow: 2px 2px #39ff14;
