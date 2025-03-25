@@ -8,23 +8,28 @@
   <style>
     body, html {
       margin: 0;
-      padding-bottom: 150px;
+      padding-bottom: 100px;
     }
-    nav, footer {
+    nav {
       position: fixed;
       width: 100%;
+      top: 0;
       background-color: #fff;
       z-index: 1000;
       box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
-    nav {
-      top: 0;
-    }
     footer {
+      position: fixed;
+      width: 100%;
       bottom: 0;
+      background-color: #333;
+      color: #fff;
+      z-index: 1000;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
+      padding: 10px 0;
     }
     .bobbott-section {
-      padding: 100px 20px 170px;
+      padding: 120px 20px 120px;
     }
     nav ul, footer .socials {
       display: flex;
