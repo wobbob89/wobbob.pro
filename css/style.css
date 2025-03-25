@@ -57,7 +57,6 @@ body.about-page::before {
 body.about-page {
   background: url('../Untitled-20.png') no-repeat center center fixed;
   background-size: cover;
-  font-family: 'PaintCans', sans-serif;
 }
 
 /* === NAVIGATION === */
@@ -99,13 +98,14 @@ nav ul li a:hover {
 
 /* === ABOUT SECTION === */
 .about-section {
-  background-color: rgba(255, 255, 255, 0.2);
   padding: 60px;
-  border-radius: 15px;
-  margin: 200px auto 50px;
-  max-width: 1200px;
+  margin: 160px auto 50px;
+  width: 90%;
+  max-width: none;
+  background-color: transparent;
   position: relative;
   z-index: 1;
+  text-align: left;
 }
 
 .about-section h1 {
@@ -114,12 +114,14 @@ nav ul li a:hover {
   margin-bottom: 40px;
   color: #39ff14;
   text-shadow: 4px 4px 8px #00ffff;
+  text-align: center;
 }
 
 .about-section p {
+  font-family: 'PaintCans', sans-serif;
   font-size: 40px;
-  line-height: 1.6;
-  margin-bottom: 50px;
+  line-height: 1.4;
+  margin-bottom: 40px;
   color: #ffffff;
   text-shadow: 6px 6px 12px #39ff14;
 }
@@ -227,34 +229,4 @@ nav ul li a:hover {
   background: #ff69b4;
   color: #000;
   box-shadow: 0 0 15px #ff69b4;
-}
-
-/* === SOCIAL MEDIA ICONS === */
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.6);
-  padding: 10px 0;
-  z-index: 9999;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
-}
-
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-}
-
-.socials a img {
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.socials a img:hover {
-  transform: scale(1.2);
-  box-shadow: 0 0 10px #00ffff;
 }
