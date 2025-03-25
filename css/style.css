@@ -42,7 +42,8 @@ body.bobbott-page {
   font-family: 'Kilroy', sans-serif;
 }
 
-body.bobbott-page::before {
+body.bobbott-page::before,
+body.about-page::before {
   content: "";
   position: fixed;
   top: 0;
@@ -51,6 +52,11 @@ body.bobbott-page::before {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
+}
+
+body.about-page {
+  background: url('../Untitled-20.png') no-repeat center center fixed;
+  background-size: cover;
 }
 
 /* === NAVIGATION === */
