@@ -36,10 +36,21 @@ body.home-page {
   background-size: cover;
 }
 
-body.bobbott-page {
-  background: url('../logos/bobbot.png') no-repeat center center fixed;
+body.bobbott-page,
+body.about-page {
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.bobbott-page {
+  background-image: url('../logos/bobbot.png');
   font-family: 'Kilroy', sans-serif;
+}
+
+body.about-page {
+  background-image: url('../Untitled-20.png');
 }
 
 body.bobbott-page::before,
@@ -52,11 +63,6 @@ body.about-page::before {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
-}
-
-body.about-page {
-  background: url('../Untitled-20.png') no-repeat center center fixed;
-  background-size: cover;
 }
 
 /* === NAVIGATION === */
@@ -110,8 +116,8 @@ nav ul li a:hover {
 
 .about-section h1 {
   font-family: 'ElFontTag', sans-serif;
-  font-size: 90px;
-  margin-bottom: 40px;
+  font-size: 60px;
+  margin-bottom: 30px;
   color: #39ff14;
   text-shadow: 4px 4px 8px #00ffff;
   text-align: center;
@@ -119,42 +125,42 @@ nav ul li a:hover {
 
 .about-section p {
   font-family: 'PaintCans', sans-serif;
-  font-size: 40px;
-  line-height: 1.4;
-  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 25px;
   color: #ffffff;
-  text-shadow: 6px 6px 12px #39ff14;
+  text-shadow: 4px 4px 8px #39ff14;
 }
 
-/* === SOCIAL ICONS (About Page) === */
-.social-icons {
-  margin: 80px auto 40px;
+/* === SOCIAL MEDIA FOOTER === */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+  z-index: 9999;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer .socials {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 25px;
-  position: relative;
-  z-index: 1;
+  flex-wrap: wrap;
 }
 
-.social-icons img {
-  width: 60px;
-  height: 60px;
+footer .socials img {
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: #000;
 }
 
-.social-icons a[href*="snapchat"] img {
-  background-color: #fff;
-  padding: 5px;
-  border-radius: 12px;
-  box-shadow: 0 0 8px #000;
-  object-fit: contain;
-}
-
-.social-icons img:hover {
+footer .socials img:hover {
   transform: scale(1.2);
+  box-shadow: 0 0 10px #00ffff;
 }
 
 /* === CDJ MUSIC PLAYERS === */
