@@ -27,6 +27,8 @@ body {
   background: #000 url('../logos/WoBBoBLogo.PNG') center center no-repeat fixed;
   background-size: contain;
   text-align: center;
+  padding-top: 100px; /* Leave space for fixed nav */
+  padding-bottom: 80px; /* Leave space for fixed footer */
 }
 
 /* === NAVIGATION === */
@@ -37,16 +39,16 @@ nav {
   background: rgba(0, 0, 0, 0.85);
   padding: 20px 0;
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 nav ul {
   list-style: none;
   text-align: center;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 nav ul li a {
@@ -61,6 +63,37 @@ nav ul li a {
 nav ul li a:hover {
   color: #00ffff;
   text-shadow: 2px 2px #ffcc00;
+}
+
+/* === FIXED FOOTER === */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+footer .socials a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer .socials a img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #00ffff;
 }
 
 /* === CDJ DECK SECTION (HOME) === */
@@ -90,7 +123,7 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-/* === CONTACT FORM (HOME) === */
+/* === CONTACT FORM === */
 .contact-form {
   margin: 60px auto;
   padding: 25px;
@@ -141,55 +174,26 @@ nav ul li a:hover {
   box-shadow: 0 0 15px #ff4500;
 }
 
-/* === FOOTER SOCIALS === */
-footer {
-  background: rgba(0, 0, 0, 0.85);
-  padding: 30px 0;
-  margin-top: 80px;
-  text-align: center;
-}
-
-footer .socials {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-
-footer .socials a img {
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-footer .socials a img:hover {
-  transform: scale(1.2);
-  box-shadow: 0 0 10px #00ffff;
-}
-
-/* === BoBBoT PAGE STYLES ONLY === */
-/* === BoBBoT PAGE STYLES ONLY === */
+/* === BoBBoT PAGE STYLES === */
 body.bobbott-page {
   font-family: 'Kilroy', cursive;
   background: url('../logos/bobbot.png') center center no-repeat fixed;
   background-size: cover;
-  color: #A0D2EB;
+  color: #FFFF00; /* Electric yellow */
   text-align: center;
-  padding: 160px 20px 60px;
 }
 
 .bobbott-section {
-  max-width: 1100px;
+  max-width: 95%;
   margin: 0 auto;
   text-align: left;
-  padding: 120px 20px 60px; /* space down from the top logo */
+  padding: 120px 20px 80px;
 }
 
 .bobbott-section h1,
 .bobbott-section h2 {
   font-size: 48px;
-  color: #A0D2EB;
+  color: #FFFF00;
   text-align: center;
   text-shadow: 2px 2px 3px #000;
   margin-bottom: 30px;
@@ -198,10 +202,10 @@ body.bobbott-page {
 .bobbott-section p,
 .bobbott-section li {
   font-size: 26px;
-  color: #A0D2EB;
+  color: #FFFF00;
   margin-bottom: 20px;
   line-height: 1.8;
-  text-shadow: 1px 1px 2px #000; /* improves readability over any background */
+  text-shadow: 1px 1px 2px #000;
 }
 
 .bobbott-section ul {
@@ -210,8 +214,8 @@ body.bobbott-page {
 }
 
 .bobbott-section ul li::before {
-  content: "⚡ ";
-  color: #ffff00;
+  content: "🟩 ";
+  color: #00FF00;
   font-size: 1.2em;
   margin-right: 8px;
 }
