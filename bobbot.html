@@ -5,57 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BoBBoT - Intelligent Assistant</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    body, html {
-      margin: 0;
-      padding-bottom: 50px;
-    }
-    nav {
-      position: fixed;
-      width: 100%;
-      top: 0;
-      background-color: rgba(0,0,0,0.6);
-      color: #fff;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-      padding: 5px 0;
-    }
-    footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: rgba(0,0,0,0.6);
-      color: #fff;
-      z-index: 1000;
-      box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
-      padding: 5px 0;
-    }
-    .bobbott-section {
-      padding: 100px 20px;
-    }
-    nav ul, footer .socials {
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-      margin: 0;
-      list-style: none;
-    }
-    nav ul li {
-      margin: 0 10px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: inherit;
-      font-weight: bold;
-    }
-    footer .socials a {
-      margin: 0 5px;
-    }
-    footer .socials img {
-      height: 24px;
-      width: 24px;
-    }
-  </style>
 </head>
 <body class="bobbott-page">
 
@@ -75,115 +24,40 @@
   <div class="bobbott-section">
     <h1>BoBBoT: Intelligent Assistant and Automation System</h1>
 
-    <p><strong>Overview:</strong> BoBBoT is a next-generation intelligent automation assistant designed by WoBBoB, built to run seamlessly on both Windows 10 and WSL (Windows Subsystem for Linux). It combines a professional GUI, deep system integration, and cutting-edge automation, all wrapped into a secure, self-updating, and fully testable bot infrastructure. Designed for power users, creators, developers, and anyone wanting to streamline their workflow, BoBBoT is your ultimate digital operator.</p>
-
-    <!-- Rest of the content remains unchanged -->
-
-    <p><strong>Why BoBBoT?</strong> It’s not just a bot. It’s your right hand. It adapts, protects, and delivers.</p>
-    <p><em>Created by WoBBoB. Designed to dominate.</em></p>
-  </div>
-
-  <!-- Global Footer -->
-  <footer>
-    <div class="socials">
-      <a href="https://www.facebook.com/dj.wobbob" target="_blank"><img src="logos/facebook-square-icon.png" alt="Facebook"></a>
-      <a href="https://www.instagram.com/dj.wobbob/" target="_blank"><img src="logos/ig-instagram-icon.png" alt="Instagram"></a>
-      <a href="https://soundcloud.com/wobbob" target="_blank"><img src="logos/soundcloud-square-color-icon.png" alt="SoundCloud"></a>
-      <a href="https://www.tiktok.com/@djwobbob" target="_blank"><img src="logos/tiktok-square-color-icon.png" alt="TikTok"></a>
-      <a href="https://onlyfans.com/mr.js.anatomy" target="_blank"><img src="logos/Onlyfans.png" alt="OnlyFans"></a>
-      <a href="https://account.apple.com/account/manage/section/information" target="_blank"><img src="logos/apple-music-icon.png" alt="Apple Music"></a>
-      <a href="https://open.spotify.com/artist/24kOFQVp37RhiFCfileSYW" target="_blank"><img src="logos/spotify-square-color-icon.png" alt="Spotify"></a>
-    </div>
-  </footer>
-
-</body>
-</html>
-
-
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="about-us.html">About</a></li>
-      <li><a href="bobbot.html">BoBBoT</a></li>
-      <li><a href="trade-a-them-bot.html">Trade 'A' Them</a></li>
-      <li><a href="gallery.html">Gallery & Merch</a></li>
-      <li><a href="contact-us.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- BoBBoT Content -->
-  <div class="bobbott-section">
-    <h1>BoBBoT: Intelligent Assistant and Automation System</h1>
-
-    <p><strong>Overview:</strong> BoBBoT is a next-generation intelligent automation assistant designed by WoBBoB, built to run seamlessly on both Windows 10 and WSL (Windows Subsystem for Linux). It combines a professional GUI, deep system integration, and cutting-edge automation, all wrapped into a secure, self-updating, and fully testable bot infrastructure. Designed for power users, creators, developers, and anyone wanting to streamline their workflow, BoBBoT is your ultimate digital operator.</p>
+    <p><strong>Overview:</strong> BoBBoT is a next-generation intelligent automation assistant designed by WoBBoB, built to run seamlessly on both Windows 10 and WSL...</p>
 
     <h2>Key Features:</h2>
     <ul>
-      <li><strong>Modular Structure for Scalability:</strong>
+      <li>Modular Structure for Scalability
         <ul>
-          <li>Core folders include gui/, core/, security/, codegen/, utils/, and testing/.</li>
-          <li>Modules are separated by function for easy maintenance and future upgrades.</li>
+          <li>gui/, core/, security/, codegen/, utils/, and testing/ folders</li>
         </ul>
       </li>
-      <li><strong>Professional-Grade GUI (Built with PyQt6):</strong>
-        <ul>
-          <li>Tabs and panels for Home, Automation, Security, System Tools, Code Generator, and Settings.</li>
-          <li>Dark and light themes supported with custom branding and fonts.</li>
-          <li>Real-time logs, action status, and system tray minimization support.</li>
-        </ul>
-      </li>
-      <li><strong>Automation Suite:</strong>
-        <ul>
-          <li>Document Creation: Generates .txt, .docx, and .pdf files using user input.</li>
-          <li>Email Sending: Secure SMTP email support with optional OAuth2 integration.</li>
-          <li>Web Search & Browser Launching: Auto-search or open pages via default browser or internal view.</li>
-          <li>System Program Access: Launch apps, open directories, or clean files directly from the GUI.</li>
-        </ul>
-      </li>
-      <li><strong>Security Controls:</strong>
-        <ul>
-          <li>VPN Activation: One-click VPN launch with system feedback.</li>
-          <li>DSS Compatibility: Integration hooks for Data Security Suites (DSS) and external firewall/antivirus.</li>
-          <li>Permission System: Role-based access control for sensitive tasks.</li>
-          <li>Audit Logging: Tracks all sensitive actions with timestamps.</li>
-        </ul>
-      </li>
-      <li><strong>Credential Management:</strong>
-        <ul>
-          <li>Uses .env or config.ini for user credentials, with support for encryption or secure keyrings.</li>
-          <li>API key testing built-in.</li>
-          <li>Settings panel allows live credential updates.</li>
-        </ul>
-      </li>
-      <li><strong>Self-Upgrading Code Generator:</strong>
-        <ul>
-          <li>Generate Python templates for new features.</li>
-          <li>Maintains version history and changelogs.</li>
-          <li>Backs up current modules before applying changes.</li>
-          <li>Compatible with local templates or AI-generated snippets.</li>
-        </ul>
-      </li>
-      <li><strong>Testing and Logging:</strong>
-        <ul>
-          <li>Unit tests included for GUI, automation, security, and core.</li>
-          <li>Logs kept for each test with pass/fail results.</li>
-          <li>Logging system tracks everything done by the bot: actions, errors, warnings, updates.</li>
-        </ul>
-      </li>
-      <li><strong>System Awareness & Cross-Platform Support:</strong>
-        <ul>
-          <li>Detects Windows vs WSL environment and adapts paths and permissions accordingly.</li>
-          <li>System commands (like open, start, sudo) auto-adjust based on detected OS.</li>
-        </ul>
-      </li>
+      <li>Professional-Grade GUI (PyQt6)</li>
+      <li>Automation Suite: docs, emails, browsing, apps</li>
+      <li>Security: VPN, DSS, audit logs, permissions</li>
+      <li>Credential Management: .env, keyrings, live updates</li>
+      <li>Self-Upgrading Code Generator: changelogs, versioning</li>
+      <li>Testing and Logging: test coverage, full logs</li>
+      <li>Cross-Platform: Windows/WSL detection and path control</li>
+      <li>Encryption + 2FA support on boot</li>
+      <li>Future-Ready: plugins, AI, voice, AppImage support</li>
+    </ul>
+
+    <h2>Typical Use Cases:</h2>
+    <ul>
+      <li>Automate weekly reports, launch creative tools</li>
+      <li>Secure emails & client files</li>
+      <li>Do VPN-protected net ops</li>
+      <li>Trigger code generation</li>
+      <li>Set up timed scripts</li>
     </ul>
 
     <p><strong>Why BoBBoT?</strong> It’s not just a bot. It’s your right hand. It adapts, protects, and delivers.</p>
     <p><em>Created by WoBBoB. Designed to dominate.</em></p>
   </div>
-  
-  <!-- Global Footer -->
+
+  <!-- Footer -->
   <footer>
     <div class="socials">
       <a href="https://www.facebook.com/dj.wobbob" target="_blank"><img src="logos/facebook-square-icon.png" alt="Facebook"></a>
