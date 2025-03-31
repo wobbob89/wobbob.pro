@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email parameters
-    $to = "enquiries@wobbob.pro";
+    $to = "bobbot@wobbob.pro";
     $subject = "New message from $name";
     $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
     $headers = "From: $email";
