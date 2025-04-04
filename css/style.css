@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: 'PaintCans', sans-serif;
+  font-family: 'Kilroy', sans-serif;
   color: #fff;
   background-color: #000;
   text-align: center;
@@ -77,7 +77,7 @@ body.trade-a-them-page::before {
 body.contact-us-page {
   background: url('../Wobbob-backgroung.png') no-repeat center center fixed;
   background-size: cover;
-  font-family: 'PaintCans', sans-serif;
+  font-family: 'Kilroy', sans-serif;
 }
 
 body.contact-us-page::before {
@@ -135,7 +135,7 @@ body.gallery-page {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  font-family: 'PaintCans', sans-serif;
+  font-family: 'Kilroy', sans-serif;
 }
 
 body.gallery-page::before {
@@ -196,7 +196,7 @@ body.gallery-page::before {
 }
 
 .merch-section p {
-  font-family: 'PaintCans', sans-serif;
+  font-family: 'Kilroy', sans-serif;
   font-size: 26px;
   color: #ffffff;
   text-shadow: 3px 3px 6px #39ff14;
@@ -215,7 +215,7 @@ body.gallery-page::before {
 }
 
 .about-section h1 {
-  font-family: 'ElFontTag', sans-serif;
+  font-family: 'PaintCans', sans-serif;
   font-size: 60px;
   margin-bottom: 30px;
   color: #39ff14;
@@ -224,7 +224,7 @@ body.gallery-page::before {
 }
 
 .about-section p {
-  font-family: 'PaintCans', sans-serif;
+  font-family: 'Kilroy', sans-serif;
   font-size: 24px;
   line-height: 1.5;
   margin-bottom: 25px;
@@ -301,7 +301,7 @@ footer .socials img:hover {
 }
 
 .contact-form h2 {
-  font-family: 'ElFontTag', sans-serif;
+  font-family: 'PaintCans', sans-serif;
   font-size: 48px;
   color: #fff;
   text-shadow: 2px 2px #ff69b4;
@@ -311,7 +311,7 @@ footer .socials img:hover {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  font-family: 'PaintCans', sans-serif;
+  font-family: 'Kilroy', sans-serif;
   padding: 12px;
   margin-bottom: 15px;
   border: none;
