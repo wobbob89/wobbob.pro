@@ -31,6 +31,7 @@
       cursor: pointer;
       text-transform: uppercase;
       transition: all 0.3s ease-in-out;
+      display: none; /* Initially hide the button */
     }
 
     .enter-btn:hover {
@@ -40,8 +41,20 @@
   </style>
 </head>
 <body>
+  <audio id="welcome-audio" src="frontend/welcome.mp3"></audio>
   <button class="enter-btn" onclick="window.location.href='home.html'">Enter</button>
+
+  <script>
+    window.addEventListener('load', function() {
+      var audio = document.getElementById('welcome-audio');
+      var enterButton = document.querySelector('.enter-btn');
+
+      audio.play();
+
+      audio.onended = function() {
+        enterButton.style.display = 'block';
+      };
+    });
+  </script>
 </body>
 </html>
-"""
-

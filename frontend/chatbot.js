@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import welcomeAudio from './welcome.mp3';
 
 const Chatbot = () => {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState("");
+
+    useEffect(() => {
+        const audio = new Audio(welcomeAudio);
+        audio.play();
+    }, []);
 
     const sendMessage = async () => {
         if (!input) return;
