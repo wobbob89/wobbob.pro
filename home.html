@@ -20,21 +20,21 @@
     </nav>
 
     <section class="cdj-wrapper">
-        <div class="cdj-deck">
+        <div class="cdj-deck" style="float: left;">
             <iframe src="https://open.spotify.com/embed/artist/24kOFQVp37RhiFCfileSYW" allow="encrypted-media"></iframe>
         </div>
-        <div class="cdj-deck">
+        <div class="cdj-deck" style="float: right;">
             <iframe src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/wobbob"></iframe>
         </div>
     </section>
 
     <section class="contact-form">
-        <h2>Get in Touch</h2>
-        <form action="mailto:dj-wobbob@outlook.com" method="post" enctype="text/plain">
+        <h2>Track Suggestions</h2>
+        <form action="send_mail.php" method="post">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <textarea name="message" rows="5" placeholder="Your Track Suggestion" required></textarea>
+            <button type="submit">Send Suggestion</button>
         </form>
     </section>
 
