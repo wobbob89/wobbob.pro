@@ -279,120 +279,136 @@ body {
     min-height: 100vh;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: space-between; /* Position items on extremes */
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 20px; /* Add some padding to the sides */
+}
+
 /* DJ Wrapper */
 .cdj-wrapper {
-    display: flex;
-    gap: 20px; /* Space between decks */
+  display: flex;
+  width: 100%; /* Full width to stretch the decks */
 }
 
 /* DJ Deck */
 .cdj-deck {
-    background: #333;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px; /* Width of the each deck */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background: #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px; /* Width of each deck */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Platter */
 .platter {
-    background: #444;
-    border: 1px solid #555;
-    border-radius: 50%;
-    height: 200px; /* Height of platter */
-    width: 200px; /* Width of platter */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-bottom: 15px; /* Space below platter */
+  background: #444;
+  border: 1px solid #555;
+  border-radius: 50%;
+  height: 200px; /* Height of platter */
+  width: 200px; /* Width of platter */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 15px; /* Space below platter */
 }
 
 /* Record */
 .record {
-    background: #555;
-    border-radius: 50%;
-    height: 180px; /* Height of record */
-    width: 180px; /* Width of record */
-    position: relative;
+  background: #555;
+  border-radius: 50%;
+  height: 180px; /* Height of record */
+  width: 180px; /* Width of record */
+  position: relative;
 }
 
 /* Label */
 .label {
-    background: #777; /* Color of the label */
-    height: 40px; /* Height of label */
-    width: 40px; /* Width of label */
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  background: #777; /* Color of the label */
+  height: 40px; /* Height of label */
+  width: 40px; /* Width of label */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Spindle */
 .spindle {
-    background: #999; /* Color of the spindle */
-    height: 10px; /* Height of spindle */
-    width: 10px; /* Width of spindle */
-    border-radius: 50%;
-    position: absolute;
-    top: 10%; /* Position spindle at the top */
-    left: 50%;
-    transform: translateX(-50%);
+  background: #999; /* Color of the spindle */
+  height: 10px; /* Height of spindle */
+  width: 10px; /* Width of spindle */
+  border-radius: 50%;
+  position: absolute;
+  top: 10%; /* Position spindle at the top */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Tonearm */
 .tonearm {
-    background: #777; /* Color of tonearm */
-    height: 5px;
-    width: 70px; /* Width of tonearm */
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: rotate(-45deg); /* Angle it */
+  background: #777; /* Color of tonearm */
+  height: 5px;
+  width: 70px; /* Width of tonearm */
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: rotate(-45deg); /* Angle it */
 }
 
 /* Controls */
 .controls {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Buttons */
 .start-stop {
-    background: #ff4081; /* Button color */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background 0.3s;
-    margin-bottom: 10px; /* Space below button */
+  background: #ff4081; /* Button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 10px; /* Space below button */
 }
 
 .start-stop:hover {
-    background: #e91e63; /* Darker shade on hover */
+  background: #e91e63; /* Darker shade on hover */
 }
 
 /* Pitch Slider */
 .pitch-slider {
-    width: 100%;
-    margin: 10px 0;
+  width: 100%;
+  margin: 10px 0;
 }
 
 /* Embed Wrapper */
 .embed-wrapper {
-    width: 100%; /* Full width for embedded player */
-    overflow: hidden; /* Hide overflow */
+  width: 100%; /* Full width for embedded player */
+  overflow: hidden; /* Hide overflow */
 }
 
 .embed-wrapper iframe {
-    width: 100%; /* Embed full width */
-    border: none; /* Remove border */
-    height: 150px; /* Height of embedded player */
+  width: 100%; /* Embed full width */
+  border: none; /* Remove border */
+  height: 150px; /* Height of embedded player */
 }
-
 
 /* === CONTACT FORM === */
 .contact-form {
