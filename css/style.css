@@ -296,36 +296,143 @@ body {
   padding: 0 20px; /* Add some padding to the sides */
 }
 
-<body>
-  <div class="cdj-wrapper">
-    <div class="cdj-deck" style="order: 1;"> <!-- Left deck -->
-      <div class="platter">
-        <div class="record"></div>
-        <div class="label"></div>
-        <div class="spindle"></div>
-        <div class="tonearm"></div>
-      </div>
-      <div class="controls">
-        <button class="start-stop">Start/Stop</button>
-        <input type="range" class="pitch-slider" />
-      </div>
-    </div>
-    
-    <div class="cdj-deck" style="order: 2;"> <!-- Right deck -->
-      <div class="platter">
-        <div class="record"></div>
-        <div class="label"></div>
-        <div class="spindle"></div>
-        <div class="tonearm"></div>
-      </div>
-      <div class="controls">
-        <button class="start-stop">Start/Stop</button>
-        <input type="range" class="pitch-slider" />
-      </div>
-    </div>
-  </div>
-</body>
+/* Wrapper for the decks */
+.cdj-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+/* Individual deck styling */
+.cdj-deck {
+  width: 340px;
+  border-radius: 20px;
+  background: radial-gradient(circle at center, #111 0%, #000 80%);
+  box-shadow: 0 0 30px #ff0, inset 0 0 10px #333;
+  padding: 20px;
+  position: relative;
+  border: 3px solid #ff69b4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Platter */
+.platter {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #333 0%, #000 100%);
+  box-shadow: inset 0 0 10px #000;
+  margin-bottom: 20px;
+}
+
+/* Record */
+.record {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #111 0%, #222 100%);
+  box-shadow: inset 0 0 5px #000;
+  animation: spin 3s linear infinite;
+}
+
+/* Label */
+.label {
+  position: absolute;
+  top: 90px;
+  left: 90px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ff0;
+  box-shadow: 0 0 5px #ff0;
+}
+
+/* Spindle */
+.spindle {
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  box-shadow: 0 0 2px #999;
+}
+
+/* Tonearm */
+.tonearm {
+  position: absolute;
+  top: 60px;
+  left: 220px;
+  width: 80px;
+  height: 10px;
+  background: #666;
+  transform: rotate(45deg);
+  transform-origin: left center;
+}
+
+/* Controls */
+.controls {
+  width: 100%;
+  text-align: center;
+}
+
+.start-stop {
+  padding: 10px 20px;
+  background: #ff69b4;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.pitch-slider {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+/* Embed wrapper */
+.embed-wrapper {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #000;
+}
+
+.embed-wrapper iframe {
+  width: 100%;
+  height: 80px;
+  border: none;
+}
+
+/* Record spin animation */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cdj-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .cdj-deck {
+    margin-bottom: 20px;
+  }
+}
 
 /* === CONTACT FORM === */
 .contact-form {
