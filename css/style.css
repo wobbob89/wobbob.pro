@@ -265,8 +265,8 @@ footer .socials img:hover {
 
 /* === FIXED CDJ LAYOUT === */
 .cdj-wrapper {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  justify-content: space-between; /* Pushes players to left and right */
   align-items: flex-start;
   padding: 160px 40px 60px;
   gap: 40px;
@@ -313,14 +313,16 @@ footer .socials img:hover {
 /* Responsive fallback */
 @media (max-width: 1024px) {
   .cdj-wrapper {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .cdj-deck {
     margin: 20px auto;
   }
 }
+
 /* === CONTACT FORM === */
 .contact-form {
   margin: 60px auto;
