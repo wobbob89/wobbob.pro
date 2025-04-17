@@ -268,11 +268,9 @@ footer .socials img:hover {
   display: flex; /* Flexbox for alignment */
   justify-content: space-between; /* Align decks to the left and right */
   align-items: center; /* Center vertically */
-  padding: 160px 60px 60px;
+  padding: 160px 100px 60px; /* Increase horizontal padding for wider spacing */
   position: relative;
   width: 100%;
-  max-width: 1200px; /* Optional: Limit width of the wrapper */
-  margin: 0 auto; /* Center the wrapper on the page */
 }
 
 .cdj-deck {
