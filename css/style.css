@@ -31,10 +31,6 @@ body {
   font-size: 20px;
 }
 
-body.home-page {
-  background: url('../Wobbob-backgroung.png') no-repeat center center fixed;
-  background-size: cover;
-}
 
 body.bobbott-page,
 body.about-page,
