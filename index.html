@@ -24,10 +24,8 @@
     document.addEventListener('DOMContentLoaded', () => {
       const widget = SC.Widget('sc-player');
       widget.bind(SC.Widget.Events.READY, function() {
-        widget.play();
-      });
-      widget.bind(SC.Widget.Events.PLAY, function() {
         widget.seekTo(52000);
+        widget.play();
       });
     });
   </script>
