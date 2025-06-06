@@ -497,6 +497,13 @@ body.home-page {
   animation: fadeIn 1.5s ease-in-out;
 }
 
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
 .enter-btn {
   font-size: 3rem;
   padding: 20px 50px;
@@ -507,6 +514,9 @@ body.home-page {
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  animation-delay: 0.5s;
 }
 
 .enter-btn:hover {
