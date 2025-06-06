@@ -22,10 +22,12 @@
   <script src="https://w.soundcloud.com/player/api.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const widget = SC.Widget(document.getElementById('sc-player'));
+      const widget = SC.Widget('sc-player');
       widget.bind(SC.Widget.Events.READY, function() {
-        widget.seekTo(52000);
         widget.play();
+      });
+      widget.bind(SC.Widget.Events.PLAY, function() {
+        widget.seekTo(52000);
       });
     });
   </script>
