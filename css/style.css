@@ -398,11 +398,23 @@ body {
 }
 
 /* Embed wrapper */
+
+/* Player wrapper */
 .embed-wrapper {
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 10px #000;
+}
+
+/* Hide the SoundCloud player but keep it in the DOM so autoplay works */
+.hidden-player {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
 }
 
 .embed-wrapper iframe {
