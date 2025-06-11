@@ -419,7 +419,8 @@ body {
 .pitch-slider {
   width: 180px;
   margin: 0 20px;
-  transform: rotate(-90deg);
+  /* keep slider values consistent across browsers */
+  transform: rotate(-90deg) scaleX(-1);
 }
 
 /* Embed wrapper */
