@@ -8,5 +8,22 @@
 </head>
 <body class="home-page">
   <button class="enter-btn" onclick="window.location.href='home.html'">Enter</button>
+
+  <!-- Hidden SoundCloud player for Tap Ho -->
+  <iframe id="sc-player" style="display:none" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/wobbob/tap-ho&auto_play=true"></iframe>
+
+  <script src="https://w.soundcloud.com/player/api.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var iframe = document.getElementById('sc-player');
+      if (iframe) {
+        var widget = SC.Widget(iframe);
+        widget.bind(SC.Widget.Events.READY, function () {
+          widget.seekTo(520);
+          widget.play();
+        });
+      }
+    });
+  </script>
 </body>
 </html>
