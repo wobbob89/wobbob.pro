@@ -545,3 +545,8 @@ body.home-page {
     padding: 15px 30px;
   }
 }
+
+/* Prevent fixed footer from overlaying main content */
+main, .main-content, section, .about-section, .cdj-wrapper, .contact-form, .merch-section {
+  margin-bottom: 60px; /* Matches footer height, adjust if needed */
+}
