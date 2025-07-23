@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("WoBBoB Website Loaded 🚀");
 
+    // Load analytics tracking
+    const analyticsScript = document.createElement('script');
+    analyticsScript.src = './js/analytics.js';
+    analyticsScript.async = true;
+    document.head.appendChild(analyticsScript);
+
     // Navigation Active State
     const currentLocation = window.location.pathname;
     const navLinks = document.querySelectorAll("nav ul li a");

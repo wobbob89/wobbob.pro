@@ -1,0 +1,23 @@
+{
+  "name": "wobbob-website",
+  "version": "1.0.0",
+  "description": "WoBBoB official website with serverless analytics",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site - no build required'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "music",
+    "drum-and-bass",
+    "website",
+    "analytics",
+    "vercel"
+  ],
+  "author": "WoBBoB",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}
