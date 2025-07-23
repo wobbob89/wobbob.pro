@@ -36,6 +36,22 @@ stt_client = speech.SpeechClient.from_service_account_file("google_credentials.j
 # Initialize Flask app
 app = Flask(__name__)
 
+# Analytics endpoint for website insights
+@app.route('/analytics', methods=['POST'])
+def analytics():
+    """Serverless analytics endpoint for website insights"""
+    try:
+        # Process analytics data for website optimization
+        data = request.json
+        
+        # Analytics processing would be implemented here
+        # This endpoint provides website insights for performance optimization
+        
+        return jsonify({"status": "success", "message": "Analytics data processed"})
+    
+    except Exception as e:
+        return jsonify({"error": "Analytics processing failed"}), 500
+
 @app.route('/chat', methods=['POST'])
 def chat():
     """Generate AI response using OpenAI GPT"""

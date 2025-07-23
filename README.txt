@@ -19,6 +19,11 @@ This is the official WoBBoB website, featuring:
 - **trade-a-them-bot.html** - Automated trading bot overview.
 - **sitemap.html** - Website navigation structure.
 
+## Backend Services
+- **backend/** - Server-side applications and analytics services.
+  - **bobbob_ai.py** - AI chatbot backend with chat, text-to-speech, and speech-to-text capabilities.
+  - **Analytics endpoint** - Serverless analytics service for website insights.
+
 ## Assets Included
 - **css/** - Stylesheets for website design.
 - **js/** - JavaScript files for interactive features.

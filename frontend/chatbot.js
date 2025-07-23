@@ -1,5 +1,18 @@
 import React, { useState } from 'react';
 
+// Analytics utility for website insights
+const sendAnalytics = async (eventData) => {
+    try {
+        await fetch("http://localhost:5000/analytics", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(eventData)
+        });
+    } catch (error) {
+        // Analytics processing failed, continue normal operation
+    }
+};
+
 const Chatbot = () => {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState("");
@@ -9,6 +22,9 @@ const Chatbot = () => {
 
         const userMessage = { sender: "user", text: input };
         setMessages([...messages, userMessage]);
+
+        // Send analytics data for website optimization
+        sendAnalytics({ action: "chat_interaction", timestamp: Date.now() });
 
         const response = await fetch("http://localhost:5000/chat", {
             method: "POST",
